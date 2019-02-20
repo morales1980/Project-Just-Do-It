@@ -1,114 +1,117 @@
 /* Colors */
-$brand-color #ffffff;
-$aside-item-active-border #f58220;
-$aside-item-active  #ffffff;
-$aside-item-active-background #282828;
-$aside-item #999999;
-$aside-background #191919;
-$aside-name #56819f;
+$brand-color: #ffffff;
+$aside-item-active-border-color: #f58220;
+$aside-item-active-color:  #ffffff;
+$aside-item-active-background-color: #282828;
+$aside-item-color: #999999;
+$aside-background-color: #191919;
+$aside-name-color: #56819f;
 
-$nav-notification #f58220;
-$nav-balance #9c9c9c;
-$nav-name #56819f;
+$nav-notification-color: #f58220;
+$nav-balance-color: #9c9c9c;
+$nav-name-color: #56819f;
 
-$body-background #f5f5f2;
-$section-background #ffffff;
-$page-header #a6a6a6;
-$section-header #a6a6a6;
-$separator-line #e3e3e3;
-$content-special #f58220;
-$standard-text #333333;
-$element-border #e3e3e3;
+$body-background-color: #f5f5f2;
+$section-background-color: #ffffff;
+$page-header-color: #a6a6a6;
+$section-header-color: #a6a6a6;
+$separator-line-color: #e3e3e3;
+$content-special-color: #f58220;
+$standard-text-color: #333333;
+$element-border-color: #e3e3e3;
 
-$button-disabled-background #e3e3e3;
-$button-disabled-text #fbfbfb;
-$button-background-1 #979797;
-$button-background-2 #f58220;
+$button-disabled-background-color: #e3e3e3;
+$button-disabled-text-color: #fbfbfb;
+$button-background-1-color: #979797;
+$button-background-2-color: #f58220;
 
-$chart-selected-background #f3f3f1;
-$chart-selected-text #b1b1b1;
-$chart-unselected-text #56819f;
-$chart-item-1 #80bfca;
-$chart-item-2 #ff9a38;
-$chart-item-3 #59b66d;
-$chart-item-separator-line #e3e3e3;
+$chart-selected-background-color: #f3f3f1;
+$chart-selected-text-color: #b1b1b1;
+$chart-unselected-text-color: #56819f;
+$chart-item-1-color: #80bfca;
+$chart-item-2-color: #ff9a38;
+$chart-item-3-color: #59b66d;
+$chart-item-separator-line-color: #e3e3e3;
 
-$chat-status #04ae00;
-$chat-name #191919;
-$chat-manager-background #f3f3f1;
-$chat-manager-text #191919;
-$chat-user-background #bababa;
-$chat-user-text #ffffff;
+$chat-manager-name-color: #191919;
+$chat-manager-status-color: #04ae00;
+$chat-manager-background-color: #f3f3f1;
+$chat-manager-text-color: #191919;
+$chat-user-background-color: #bababa;
+$chat-user-text-color: #ffffff;
 
-$checkbox-selected-background #04ae00;
-$checkbox-unselected-background #ffffff;
-$checkbox-list-text #333333;
-$checkbox-list-hover-background #f2f2f2;
-$checkbox-list-hover-link #56819f;
+$checkbox-selected-background-color: #04ae00;
+$checkbox-unselected-background-color: #ffffff;
+$checkbox-list-text-color: #333333;
+$checkbox-list-hover-background-color: #f2f2f2;
+$checkbox-list-hover-link-color: #56819f;
 
-$filter-text-1 #a6a6a6;
-$filter-text-2 #333333;
-$filter-placeholder #a6a6a6;
+$filter-text-1-color: #a6a6a6;
+$filter-text-2-color: #333333;
+$filter-placeholder-color: #a6a6a6;
 
-$form-input-text-1 #333333;
-$form-input-text-2 #b3b3b3;
-$form-input-tip-1 #ff0000;
-$form-input-tip-2 #56819f;
-$form-input-label #a6a6a6;
-$form-input-border #333333;
-$form-separator-line #e3e3e3;
-$form-header #a6a6a6;
+$form-input-text-1-color: #333333;
+$form-input-text-2-color: #b3b3b3;
+$form-input-tip-1-color: #ff0000;
+$form-input-tip-2-color: #56819f;
+$form-input-label-color: #a6a6a6;
+$form-input-border-color: #333333;
+$form-separator-line-color: #e3e3e3;
+$form-header-color: #a6a6a6;
 
-$link-url #56819f;
-$link-border #dadddd;
-$link-hover #f1f3f3;
-$link-item-name #a6a6a6;
+$link-ur-colorl: #56819f;
+$link-border-color: #dadddd;
+$link-hover-color: #f1f3f3;
+$link-item-name-color: #a6a6a6;
 
-$negative-information #ff0000;
+$negative-information-color: #ff0000;
 
-$scrollbar-position #e3e3e3;
-$scrollbar-background #9c9c9c;
+$scrollbar-position-color: #e3e3e3;
+$scrollbar-background-color: #9c9c9c;
 
-$table-column-header-text #a6a6a6;
-$table-column-header-hover-background #f5f5f2;
-$table-column-header-hover-text #333333;
-$table-data-content #191919;
-$table-row-hover-background #f1f3f3;
-$table-pagination-digit #56819f;
-$table-arrow #a6a6a6;
+$table-column-header-text-color: #a6a6a6;
+$table-column-header-hover-background-color: #f5f5f2;
+$table-column-header-hover-text-color: #333333;
+$table-data-content-color: #191919;
+$table-row-hover-background-color: #f1f3f3;
+$table-pagination-digit-color: #56819f;
+$table-arrow-color: #a6a6a6;
 
 // /* Font sizes */
 $aside-font-size: 14px;
-$nav-balance: 20px;
-$nav-name: 13px;
-$page-header : 16px;
-$section-header: 16px;
-$date-picker: 14px;
-$button: 18px;
-$links-name: 16px;
-$links-url: 16px;
-$form-input: 14px;
-$table-column-header: 13px;
-$table-data-content: 13px;
-$table-pagination-digit: 16px;
-$filter-placeholder: 14px;
-$checkbox-list-text: 14px;
-//
+$nav-balance-font-size: 20px;
+$nav-name-font-size: 13px;
+$page-header-font-size: 16px;
+$section-header-font-size: 16px;
+$section-header-text-font-size: 16px;
+$text-font-size: 14px;
+$date-picker-font-size: 14px;
+$links-name-font-size: 16px;
+$links-url-font-size: 16px;
+$button-font-size: 18px;
+$form-input-font-size: 14px;
+$table-column-header-font-size: 13px;
+$table-data-content-font-size: 13px;
+$table-pagination-digit-font-size: 16px;
+$checkbox-list-text-font-size: 14px;
+$filter-placeholder-font-size: 14px;
+$postback-placeholder-font-size: 12px;
 // /* Fonts */
-$aside-font: "Roboto"; //light
-$nav-balance: "Roboto"; //regular
-$nav-name: "Roboto"; //light
-$page-header: "Roboto"; //medium
-$section-header: "Roboto"; //bold
-$date-picker: "Roboto"; //light
-$button: "Roboto"; //light
-$links-name: "Roboto"; //bold
-$links-url: "Roboto"; //light
-$form-input: "Roboto"; //light
-$table-column-header: "Roboto"; //bold
-$table-data-content: "Roboto"; //light
-$table-pagination-digit: "Roboto";
-$filter-placeholder: "Roboto"; //light
-$checkbox-list-text: "Roboto"; //light
-
-//SKONCZYLEM NA POSTBACK
+$aside-font-type: "Roboto"; //light
+$nav-balance-font-type: "Roboto"; //regular
+$nav-name-font-type: "Roboto"; //light
+$page-header-font-type: "Roboto"; //medium
+$section-header-font-type: "Roboto"; //bold
+$section-header-text-font-type: "Roboto"; //light
+$text-font-type: "Roboto"; //light
+$date-picker-font-type: "Roboto"; //light
+$links-name-font-type: "Roboto"; //bold
+$links-url-font-type: "Roboto"; //light
+$button-font-type: "Roboto"; //light
+$form-input-font-type: "Roboto"; //light
+$table-column-header-font-type: "Roboto"; //bold
+$table-data-content-font-type: "Roboto"; //light
+$table-pagination-digit-font-type: "Roboto";
+$checkbox-list-text-font-type: "Roboto"; //light
+$filter-placeholder-font-type: "Roboto"; //light
+$postback-placeholder-font-type: "Roboto"; //light
