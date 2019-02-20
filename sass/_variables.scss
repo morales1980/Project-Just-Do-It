@@ -1,4 +1,30 @@
 /* Colors */
+$color-1: #191919;
+$color-2: #282828;
+$color-3: #333333;
+$color-4: #b1b1b1;
+$color-5: #bababa;
+$color-6: #b3b3b3;
+$color-7: #999999;
+$color-8: #979797;
+$color-10: #9c9c9c;
+$color-9: #a6a6a6;
+$color-11: #dadddd;
+$color-12: #e3e3e3;
+$color-13: #f5f5f2;
+$color-14: #f3f3f1;
+$color-15: #fbfbfb;
+$color-16: #f2f2f2;
+$color-17: #f1f3f3;
+$color-18: #ffffff;
+$color-19: #04ae00;
+$color-20: #59b66d;
+$color-21: #ff0000;
+$color-22: #f58220;
+$color-23: #ff9a38;
+$color-24: #56819f;
+$color-25: #80bfca;
+
 $brand-color: #ffffff;
 $aside-item-active-border-color: #f58220;
 $aside-item-active-color:  #ffffff;
@@ -77,41 +103,65 @@ $table-row-hover-background-color: #f1f3f3;
 $table-pagination-digit-color: #56819f;
 $table-arrow-color: #a6a6a6;
 
-// /* Font sizes */
-$aside-font-size: 14px;
-$nav-balance-font-size: 20px;
-$nav-name-font-size: 13px;
-$page-header-font-size: 16px;
-$section-header-font-size: 16px;
-$section-header-text-font-size: 16px;
-$text-font-size: 14px;
-$date-picker-font-size: 14px;
-$links-name-font-size: 16px;
-$links-url-font-size: 16px;
-$button-font-size: 18px;
-$form-input-font-size: 14px;
-$table-column-header-font-size: 13px;
-$table-data-content-font-size: 13px;
-$table-pagination-digit-font-size: 16px;
-$checkbox-list-text-font-size: 14px;
-$filter-placeholder-font-size: 14px;
-$postback-placeholder-font-size: 12px;
-// /* Fonts */
-$aside-font-type: "Roboto"; //light
-$nav-balance-font-type: "Roboto"; //regular
-$nav-name-font-type: "Roboto"; //light
-$page-header-font-type: "Roboto"; //medium
-$section-header-font-type: "Roboto"; //bold
-$section-header-text-font-type: "Roboto"; //light
-$text-font-type: "Roboto"; //light
-$date-picker-font-type: "Roboto"; //light
-$links-name-font-type: "Roboto"; //bold
-$links-url-font-type: "Roboto"; //light
-$button-font-type: "Roboto"; //light
-$form-input-font-type: "Roboto"; //light
-$table-column-header-font-type: "Roboto"; //bold
-$table-data-content-font-type: "Roboto"; //light
-$table-pagination-digit-font-type: "Roboto";
-$checkbox-list-text-font-type: "Roboto"; //light
-$filter-placeholder-font-type: "Roboto"; //light
-$postback-placeholder-font-type: "Roboto"; //light
+/* Font family */
+$font-family: 'Roboto', sans-serif;
+
+/* Font sizes */
+$aside-font-size: 0.875rem;
+$nav-balance-font-size: 1.25rem;
+$nav-name-font-size: 0.8125rem;
+
+$page-header-font-size: 1rem;
+$section-header-font-size: 1rem;
+$section-header-text-font-size: 1rem;
+$text-font-size: 0.875rem;
+
+$date-picker-font-size: 0.875rem;
+
+$links-name-font-size: 1rem;
+$links-url-font-size: 1rem;
+
+$button-font-size: 1.125rem;
+
+$form-input-font-size:0.875rem;
+
+$table-column-header-font-size: 0.8125rem;
+$table-data-content-font-size: 0.8125rem;
+$table-pagination-digit-font-size: 1rem;
+
+$checkbox-list-text-font-size: 0.875rem;
+
+$filter-placeholder-font-size: 0.875rem;
+$postback-placeholder-font-size: 0.75rem;
+
+/* Font weight */
+$aside-font-weight: 300;
+$nav-balance-font-weight: 400;
+$nav-name-font-weight: 300;
+
+$page-header-font-weight: 500;
+$section-header-font-weight: 700;
+$section-header-text-font-weight: 300;
+$text-font-weight: 300;
+
+$date-picker-font-weight: 300;
+
+$links-name-font-weight: 700;
+$links-url-font-weight: 300;
+
+$button-font-weight: 300;
+
+$form-input-font-weight: 300;
+
+$table-column-header-font-weight: 700;
+$table-data-content-font-weight: 300;
+$table-pagination-digit-font-weight: 400;
+
+$checkbox-list-text-font-weight: 300;
+
+$filter-placeholder-font-weight: 300;
+$postback-placeholder-font-weight: 300;
+// light - 300
+// regular - 400
+// medium - 500
+// bold - 700
