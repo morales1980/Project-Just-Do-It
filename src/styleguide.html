@@ -5,27 +5,561 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Styleguide</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
-  <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-  <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-  <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
-  <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
-  <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-  <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
-  <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
-  <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
-  <ul>
-    <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-  </ul>
-  <ol>
-    <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong></li>
-    <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
-  </ol>
+<body class="styleguide">
+  <div class="container section section--border">
+    <div class="row">
+      <div class="col-xl-12">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
+        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
+        <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h6>
+        <p>Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit</strong>. Maecenas blandit diam urna, eu <a href="#">dignissim</a> ex dignissim consequat. Duis porta lectus lorem, quis eleifend justo scelerisque eget. Duis ac sem et turpis tincidunt molestie in non ipsum. Maecenas ut augue erat. Phasellus eu est commodo est hendrerit tempor. Mauris dignissim ex vel magna aliquet, sit amet facilisis turpis tincidunt. Fusce quis blandit libero, sed dapibus nisl. Pellentesque vitae ligula sed tellus sagittis dapibus eu non metus. Mauris rutrum ligula ut sapien varius, pellentesque volutpat diam porta. Ut at nunc ac tortor dapibus sodales id at leo. Nunc posuere lorem non feugiat elementum. Nunc sagittis diam justo, nec malesuada sapien tristique id. Vivamus in consequat nibh. Etiam tempor id ligula a dapibus. Proin vitae arcu nulla.</p>
+        <a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+        <ul>
+          <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+          <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+          <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        </ul>
+        <ol>
+          <li>Lorem ipsum dolor, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+          <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+          <li>Lorem ipsum dolor <strong>sit amet</strong>, consectetur <a href="#">consectetur adipiscing elit.</a>.</li>
+        </ol>
+      </div>
+    </div>
+    <div class="row">
+      <!-- texts -->
+      <div class="col-xl-2">
+        <span class="label">texts</span>
+        <h2 class="page-header">page header</h2>
+        <h3 class="section-header">Section header</h3>
+        <p class="section-text">Text</p>
+      </div>
+      <!-- links -->
+      <div class="col-xl-2">
+        <span class="label label--links">links</span>
+        <div class="row">
+          <div class="col-xl-5">
+            <a href="#" class="link link--large">large link</a>
+          </div>
+          <div class="col-xl-7">
+            <a href="#" class="link link--large link--hover">large link hover</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-5">
+            <a href="#" class="link link--small">small link</a>
+          </div>
+          <div class="col-xl-7">
+            <a href="#" class="link link--small link--hover">small link hover</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-5">
+            <a href="#" class="link link--hover">
+              <svg class="link__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                <path d="M12,12H1V1h3V0H0v13h13V9h-1V12z M7,0v1h4.3L4.1,8.1l0.7,0.7L12,1.7V6h1V0H7z"/>
+              </svg>
+            </a>
+          </div>
+          <div class="col-xl-7">
+            <a href="#" class="link">
+              <svg class="link__icon link__icon--hover" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                <path d="M12,12H1V1h3V0H0v13h13V9h-1V12z M7,0v1h4.3L4.1,8.1l0.7,0.7L12,1.7V6h1V0H7z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- colors -->
+      <div class="col-xl-3" style="padding-left: 20px; padding-right: 20px;">
+        <div class="row">
+          <div class="col-xl-12">
+            <span class="label">colors</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="box box--1"><span>#191919</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--2"><span>#ff0000</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--3"><span>#04ae00</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="box box--4"><span>#333333</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--5"><span>#56819f</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--6"><span>#59b66d</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="box box--7"><span>#a6a6a6</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--8"><span>#80bfca</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--9"><span>#f58220</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="box box--10"><span>#b1b1b1</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--11"><span>#ffffff</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--12"><span>#ff9a38</span></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4">
+            <div class="box box--13"><span>#e3e3e3</span></div>
+          </div>
+          <div class="col-xl-4">
+            <div class="box box--14"><span>#f5f5f2</span></div>
+          </div>
+          <div class="col-xl-4"></div>
+        </div>
+      </div>
+      <!-- buttons -->
+      <div class="col-xl-2">
+        <div class="row">
+          <div class="col-xl-12">
+            <span class="label">buttons</span>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 10px;">
+          <div class="col-xl-6">
+            <button class="button button--cancel" type="button">button</button>
+          </div>
+          <div class="col-xl-6">
+            <button class="button button--cancel button--cancel-hover" type="button">hover</button>
+          </div>
+        </div>
+        <div class="row" style="padding-bottom: 10px;">
+          <div class="col-xl-6">
+            <button class="button button--accept" type="button">button</button>
+          </div>
+          <div class="col-xl-6">
+            <button class="button button--accept button--accept-hover" type="button">hover</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <button class="button button--disabled" type="button">disabled button</button>
+          </div>
+        </div>
+      </div>
+      <!-- checkbox list -->
+      <div class="col-xl-3">
+        <div class="row">
+          <div class="col-xl-12">
+            <span class="label">checkbox list</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <form class="form" action="">
+              <div class="checkbox-item">
+                <input class="checkbox-item__input" type="checkbox" id="input-1" value="true" hidden>
+                <label class="checkbox-item__label" for="input-1">
+                  <span class="checkbox-item__display-field"></span>
+                  <p class="checkbox-item__name">checkbox</p>
+                  <svg class="checkbox-item__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                    <path d="M12,12H1V1h3V0H0v13h13V9h-1V12z M7,0v1h4.3L4.1,8.1l0.7,0.7L12,1.7V6h1V0H7z"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="checkbox-item checkbox-item--checked">
+                <input class="checkbox-item__input" type="checkbox" id="input-2" value="true" hidden checked>
+                <label class="checkbox-item__label" for="input-2">
+                  <span class="checkbox-item__display-field"></span>
+                  <p class="checkbox-item__name">marked check box</p>
+                  <svg class="checkbox-item__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                    <path d="M12,12H1V1h3V0H0v13h13V9h-1V12z M7,0v1h4.3L4.1,8.1l0.7,0.7L12,1.7V6h1V0H7z"/>
+                  </svg>
+                </label>
+              </div>
+              <div class="checkbox-item checkbox-item--hover">
+                <input class="checkbox-item__input" type="checkbox" id="input-3" value="true" hidden>
+                <label class="checkbox-item__label" for="input-3">
+                  <span class="checkbox-item__display-field"></span>
+                  <p class="checkbox-item__name">hover</p>
+                  <svg class="checkbox-item__icon checkbox-item__icon--hover" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 13 13" style="enable-background:new 0 0 13 13;" xml:space="preserve">
+                    <path d="M12,12H1V1h3V0H0v13h13V9h-1V12z M7,0v1h4.3L4.1,8.1l0.7,0.7L12,1.7V6h1V0H7z"/>
+                  </svg>
+                </label>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-6">
+        <!-- color tabs -->
+        <span class="label">color tabs</span>
+        <div class="tabs">
+          <a href="#" class="tabs__item">color tab</a>
+          <a href="#" class="tabs__item tabs__item--hover">hover</a>
+          <a href="#" class="tabs__item tabs__item--selected">selected</a>
+        </div>
+        <!-- date period -->
+        <span class="label">date peroid</span>
+        <div class="date-picker">
+          <input type="" name="" value="">
+          <input type="" name="" value="">
+        </div>
+        <!-- table with link -->
+        <span class="label">table with link</span>
+        <table class="table-link">
+          <tbody>
+            <tr class="table-link__row">
+              <td class="table-link__cell-line-header">Line header</td>
+              <td class="table-link__cell-link"><a class="table-link__link" href="#">link</a></td>
+            </tr>
+            <tr class="table-link__row table-link__row--hover">
+              <td class="table-link__cell-line-header">Line header</td>
+              <td class="table-link__cell-link"><a class="table-link__link" href="#">link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- table list with one digit -->
+        <span class="label">table list with one digit</span>
+        <table class="table-digit">
+          <tbody>
+            <tr class="table-digit__row">
+              <td class="table-digit__cell-line-header">Line header</td>
+              <td class="table-digit__cell-digit">123</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- large table with sorting -->
+        <span class="label">large table with sorting</span>
+        <table class="table-sorting">
+          <thead>
+            <tr class="table-sorting__row-header">
+              <th class="table-sorting__cell-header">
+                <span class="table-sorting__cell-header-name table-sorting__cell-header-name--hover">Column name
+                  <svg class="table-sorting__arrow table-sorting__arrow--hover" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve"><polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                  </svg>
+                </span>
+              </th>
+              <th class="table-sorting__cell-header">
+                <span class="table-sorting__cell-header-name">Column name
+                  <svg class="table-sorting__arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 7 5" style="enable-background:new 0 0 7 5;" xml:space="preserve"><polygon points="6.1,4.9 3.5,2.2 0.9,4.9 0.1,4.1 3.5,0.8 6.9,4.1 "/>
+                  </svg>
+                </span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-sorting__row-body table-sorting__row-body--hover">
+              <td class="table-sorting__cell-data">12345</td>
+              <td class="table-sorting__cell-data">12345</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- messenger -->
+        <span class="label">messenger</span>
+        <div class="messenger" style="width: 90%;">
+          <div class="messenger__row">
+            <div class="messenger__manager-picture"></div>
+            <div class="messenger__manager-details">
+              <h4 class="messenger__manager-name">michael e.</h4>
+              <div class="messenger__manager-status">
+                <span class="messenger__info--online">online</span>
+                <span class="messenger__info--offline">offline</span>
+              </div>
+            </div>
+          </div>
+          <div class="messenger__chat">
+            <div class="messenger__chat-manager">
+              <p class="messenger__chat-manager-message">Manager message.</p>
+            </div>
+            <div class="messenger__chat-user">
+              <p class="messenger__chat-user-message">User message.</p>
+            </div>
+          </div>
+        </div>
+        <!-- table with link and icon -->
+        <span class="label">table with link and icons</span>
+        <table class="table-link-icon">
+          <tbody>
+            <tr class="table-link-icon__row">
+              <td class="table-link-icon__cell-line-header">Line header</td>
+              <td class="table-link-icon__cell-link">
+                <a class="table-link-icon__link" href="#">www.link.com</a>
+                <span class="table-link-icon__icons">
+                  <svg class="table-link-icon__icons-link" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve"><path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                  	C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                  <svg class="table-link-icon__icons-trash" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve"><path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                  	V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </span>
+              </td>
+            </tr>
+            <tr class="table-link-icon__row table-link-icon__row--hover">
+              <td class="table-link-icon__cell-line-header">Line header</td>
+              <td class="table-link-icon__cell-link">
+                <a class="table-link-icon__link" href="#">www.link.com</a>
+                <span class="table-link-icon__icons">
+                  <svg class="table-link-icon__icons-link table-link-icon__icons-link--hover" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 10" style="enable-background:new 0 0 18 10;" xml:space="preserve"><path d="M7,8H5C3.3,8,2,6.7,2,5s1.3-3,3-3h1V1H5C2.8,1,1,2.8,1,5s1.8,4,4,4h2c2.2,0,4-1.8,4-4h-1C10,6.7,8.7,8,7,8z M13,1h-2
+                  	C8.8,1,7,2.8,7,5h1c0-1.7,1.3-3,3-3h2c1.7,0,3,1.3,3,3s-1.3,3-3,3h-1v1h1c2.2,0,4-1.8,4-4S15.2,1,13,1z"/>
+                  </svg>
+                  <svg class="table-link-icon__icons-trash" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 16" style="enable-background:new 0 0 14 16;" xml:space="preserve"><path d="M11,15H3V6H2v10h10V6h-1V15z M0,4v1h14V4H0z M7,2c0.6,0,1,0.4,1,1h1c0-1.1-0.9-2-2-2S5,1.9,5,3h1C6,2.4,6.4,2,7,2z M8,6v8h1
+                  	V6H8z M5,6v8h1V6H5z"/>
+                  </svg>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- inputs -->
+      <div class="col-xl-6">
+        <div class="row">
+          <div class="col-xl-12">
+            <span class="label">inputs</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4" style="margin-left: -36px;">
+            <textarea class="textarea" placeholder="placeholder text"></textarea>
+            <input class="input" type="text" placeholder="placeholder text">
+            <div class="input-password">
+              <input class="input-password__input" type="password" placeholder="password">
+              <svg class="input-password__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 14" style="enable-background:new 0 0 22 14;" xml:space="preserve">
+                <path d="M21.1,7.4l-2.6-2.6l-2,2L14.7,5h-2.1c-1-2.8-3.8-4.4-6.8-3.9C3.5,1.5,1.6,3.4,1.1,5.7c-0.4,1.8,0.1,3.7,1.2,5.1
+                C3.5,12.2,5.2,13,7,13c2.2,0,4.1-1.1,5.2-3h7.9c0.6,0,1.1-0.4,1.4-0.9C21.7,8.5,21.6,7.9,21.1,7.4z M20.5,8.7c0,0.1-0.2,0.3-0.5,0.3
+                h-8.5l-0.1,0.3C10.6,11,8.9,12,7,12c-1.5,0-2.9-0.7-3.9-1.8c-1-1.2-1.3-2.7-1-4.2C2.5,4,4.1,2.5,6,2.1C6.4,2,6.7,2,7,2
+                c2.2,0,4.2,1.4,4.8,3.6L11.9,6h2.4l2.2,2.2l2-2l1.9,1.9C20.7,8.4,20.6,8.6,20.5,8.7z M5.5,4.5C4.1,4.5,3,5.6,3,7s1.1,2.5,2.5,2.5
+                S8,8.4,8,7S6.9,4.5,5.5,4.5z M5.5,8.5C4.7,8.5,4,7.8,4,7s0.7-1.5,1.5-1.5S7,6.2,7,7S6.3,8.5,5.5,8.5z"/>
+              </svg>
+            </div>
+            <div class="input-password">
+              <input class="input-password__input input-password__input--error" type="password" value="password">
+              <svg class="input-password__icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 14" style="enable-background:new 0 0 22 14;" xml:space="preserve">
+                <path d="M21.1,7.4l-2.6-2.6l-2,2L14.7,5h-2.1c-1-2.8-3.8-4.4-6.8-3.9C3.5,1.5,1.6,3.4,1.1,5.7c-0.4,1.8,0.1,3.7,1.2,5.1
+                C3.5,12.2,5.2,13,7,13c2.2,0,4.1-1.1,5.2-3h7.9c0.6,0,1.1-0.4,1.4-0.9C21.7,8.5,21.6,7.9,21.1,7.4z M20.5,8.7c0,0.1-0.2,0.3-0.5,0.3
+                h-8.5l-0.1,0.3C10.6,11,8.9,12,7,12c-1.5,0-2.9-0.7-3.9-1.8c-1-1.2-1.3-2.7-1-4.2C2.5,4,4.1,2.5,6,2.1C6.4,2,6.7,2,7,2
+                c2.2,0,4.2,1.4,4.8,3.6L11.9,6h2.4l2.2,2.2l2-2l1.9,1.9C20.7,8.4,20.6,8.6,20.5,8.7z M5.5,4.5C4.1,4.5,3,5.6,3,7s1.1,2.5,2.5,2.5
+                S8,8.4,8,7S6.9,4.5,5.5,4.5z M5.5,8.5C4.7,8.5,4,7.8,4,7s0.7-1.5,1.5-1.5S7,6.2,7,7S6.3,8.5,5.5,8.5z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="col-xl-4" style="margin-right: 18px; margin-left: 18px;">
+            <textarea class="textarea textarea--hover">hover</textarea>
+            <input class="input input--hover" type="text" value="hover">
+            <div class="input-password">
+              <input class="input-password__input input-password__input--hover" type="password" value="password">
+              <svg class="input-password__icon input-password__icon--hover" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 14" style="enable-background:new 0 0 22 14;" xml:space="preserve">
+                <path d="M21.1,7.4l-2.6-2.6l-2,2L14.7,5h-2.1c-1-2.8-3.8-4.4-6.8-3.9C3.5,1.5,1.6,3.4,1.1,5.7c-0.4,1.8,0.1,3.7,1.2,5.1
+                C3.5,12.2,5.2,13,7,13c2.2,0,4.1-1.1,5.2-3h7.9c0.6,0,1.1-0.4,1.4-0.9C21.7,8.5,21.6,7.9,21.1,7.4z M20.5,8.7c0,0.1-0.2,0.3-0.5,0.3
+                h-8.5l-0.1,0.3C10.6,11,8.9,12,7,12c-1.5,0-2.9-0.7-3.9-1.8c-1-1.2-1.3-2.7-1-4.2C2.5,4,4.1,2.5,6,2.1C6.4,2,6.7,2,7,2
+                c2.2,0,4.2,1.4,4.8,3.6L11.9,6h2.4l2.2,2.2l2-2l1.9,1.9C20.7,8.4,20.6,8.6,20.5,8.7z M5.5,4.5C4.1,4.5,3,5.6,3,7s1.1,2.5,2.5,2.5
+                S8,8.4,8,7S6.9,4.5,5.5,4.5z M5.5,8.5C4.7,8.5,4,7.8,4,7s0.7-1.5,1.5-1.5S7,6.2,7,7S6.3,8.5,5.5,8.5z"/>
+              </svg>
+            </div>
+          </div>
+          <div class="col-xl-4">
+            <textarea class="textarea">text</textarea>
+            <input class="input" type="text" value="text">
+            <div class="input-password">
+              <input class="input-password__input" type="password" value="password">
+              <svg class="input-password__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 14" style="enable-background:new 0 0 22 14;" xml:space="preserve">
+                <path d="M21.1,7.4l-2.6-2.6l-2,2L14.7,5h-2.1c-1-2.8-3.8-4.4-6.8-3.9C3.5,1.5,1.6,3.4,1.1,5.7c-0.4,1.8,0.1,3.7,1.2,5.1
+                C3.5,12.2,5.2,13,7,13c2.2,0,4.1-1.1,5.2-3h7.9c0.6,0,1.1-0.4,1.4-0.9C21.7,8.5,21.6,7.9,21.1,7.4z M20.5,8.7c0,0.1-0.2,0.3-0.5,0.3
+                h-8.5l-0.1,0.3C10.6,11,8.9,12,7,12c-1.5,0-2.9-0.7-3.9-1.8c-1-1.2-1.3-2.7-1-4.2C2.5,4,4.1,2.5,6,2.1C6.4,2,6.7,2,7,2
+                c2.2,0,4.2,1.4,4.8,3.6L11.9,6h2.4l2.2,2.2l2-2l1.9,1.9C20.7,8.4,20.6,8.6,20.5,8.7z M5.5,4.5C4.1,4.5,3,5.6,3,7s1.1,2.5,2.5,2.5
+                S8,8.4,8,7S6.9,4.5,5.5,4.5z M5.5,8.5C4.7,8.5,4,7.8,4,7s0.7-1.5,1.5-1.5S7,6.2,7,7S6.3,8.5,5.5,8.5z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-12">
+            <!-- slider -->
+            <span class="label">slider</span>
+            <div class="slider">
+              <div class="slider__row">
+                <span class="slider__value-start">0</span>
+                <span class="slider__value-end">168</span>
+              </div>
+              <div class="slider__background">
+                <div class="slider__ratio"></div>
+              </div>
+              <div class="slider__indicator">
+                <span class="slider__value-present">104 hours</span>
+              </div>
+            </div>
+            <!-- pagination -->
+            <span class="label">pagination</span>
+            <div class="pagination">
+              <svg class="pagination__arrow-left"version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve"><polygon points="9.3,16.9 0.9,8.5 9.3,0.1 10,0.9 2.4,8.5 10,16.1 "/>
+              </svg>
+              <a class="pagination__page-link pagination__page-link--active" href="#">1</a>
+              <a class="pagination__page-link" href="#">2</a>
+              <a class="pagination__page-link" href="#">3</a>
+              <a class="pagination__page-link" href="#">4</a>
+              <a class="pagination__page-link pagination__page-link--hover" href="#">5</a>
+              <a class="pagination__page-link" href="#">6</a>
+              <a class="pagination__page-link" href="#">7</a>
+              <a class="pagination__page-link" href="#">8</a>
+              <a class="pagination__page-link" href="#">9</a>
+              <svg class="pagination__arrow-right"version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 17" style="enable-background:new 0 0 11 17;" xml:space="preserve"><polygon points="1.6,16.9 0.9,16.1 8.6,8.5 0.9,0.9 1.6,0.1 10,8.5 "/>
+              </svg>
+            </div>
+            <div class="row">
+              <div class="col-xl-5">
+                <!-- balance -->
+                <span class="label">balance</span>
+                <div class="balance">
+                  <span class="balance__sum">
+                    <svg class="balance__icon-wallet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 18" style="enable-background:new 0 0 17 18;" xml:space="preserve"><path d="M17,9h-2V7.5C15,6.1,13.9,5,12.5,5H4.9L12,2.2V4h1V0.8L2.1,5C0.9,5.2,0,6.3,0,7.5v8C0,16.9,1.1,18,2.5,18h10
+                    	c1.4,0,2.5-1.1,2.5-2.5V14h2V9z M14,15.5c0,0.8-0.7,1.5-1.5,1.5h-10C1.7,17,1,16.3,1,15.5v-8C1,6.7,1.7,6,2.5,6h10
+                    	C13.3,6,14,6.7,14,7.5V9H8.5C7.1,9,6,10.1,6,11.5S7.1,14,8.5,14H14V15.5z M16,13H8.5C7.7,13,7,12.3,7,11.5S7.7,10,8.5,10H16V13z"/>
+                    </svg>
+                    $1,500.00
+                    <svg class="balance__icon-arrow" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 11 7" style="enable-background:new 0 0 11 7;" xml:space="preserve">
+                    <polygon points="5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9 "/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <!-- member name -->
+                <span class="label">member name</span>
+                <div class="member-name">
+                  <span class="member-name__name">
+                    <svg class="member-name__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve"><path d="M9.5,4C7.6,4,6,5.6,6,7.5S7.6,11,9.5,11S13,9.4,13,7.5S11.4,4,9.5,4z M9.5,10C8.1,10,7,8.9,7,7.5S8.1,5,9.5,5S12,6.1,12,7.5
+                    	S10.9,10,9.5,10z M9.5,1C4.8,1,1,4.8,1,9.5S4.8,18,9.5,18S18,14.2,18,9.5S14.2,1,9.5,1z M14,15.5c0-1.8-0.1-3.5-1.3-4.8l-0.7,0.7
+                    	c1.1,1.1,1.1,2.7,1.1,4.5l0,0.3c-1,0.6-2.2,0.9-3.5,0.9S7,16.7,6,16.1l0-0.3c0-1.8,0-3.4,1.1-4.5l-0.7-0.7C5.1,12,5,13.7,5,15.5
+                    	c-1.8-1.4-3-3.5-3-6C2,5.4,5.4,2,9.5,2S17,5.4,17,9.5C17,11.9,15.8,14.1,14,15.5z"/>
+                    </svg>
+                    leonardo dicaprio
+                  </span>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <!-- message -->
+                <span class="label">message and logout</span>
+                <div class="message">
+                  <span class="message__button">
+                    <svg class="message__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 18 19" style="enable-background:new 0 0 18 19;" xml:space="preserve"><path d="M17,16l-2.4-3.7V6.5c0-3-2.5-5.5-5.5-5.5S3.6,3.5,3.6,6.5v5.8L1.1,16h5.5c0.2,1.1,1.2,2,2.4,2s2.2-0.9,2.4-2H17z M4.6,6.5
+                    	C4.6,4,6.6,2,9.1,2s4.5,2,4.5,4.5V12h-9V6.5z M4.3,13h9.5l1.3,2H3L4.3,13z M9.1,17c-0.7,0-1.2-0.4-1.4-1h2.8
+                    	C10.3,16.6,9.7,17,9.1,17z"/>
+                    </svg>
+                    <span class="message__notification"></span>
+                  </span>
+                </div>
+                <!-- logout -->
+                <div class="logout">
+                  <span class="logout__button">
+                    <svg class="logout__icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19 15" style="enable-background:new 0 0 19 15;" xml:space="preserve"><path d="M13.9,3.1l-0.7,0.7L16.3,7H3v1h13.3l-3.1,3.1l0.7,0.7l4.4-4.4L13.9,3.1z M10,14H1V1h9v3h1V0H0v15h11v-4h-1V14z"/>
+                    </svg>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xl-3">
+                <!-- logo -->
+                <span class="label">logo</span>
+                <div style="background-color: black; width: 100px; height: 46px;">
+                  <img class="logo" src="../images/logo.png" alt="logo">
+                </div>
+                <!-- mobile nav toggle -->
+                <span class="label">mobile nav toggle</span>
+                <div style="background-color: black; width: 48px; height: 46px;">
+                  <div class="mobile-nav">
+                    <span class="mobile-nav__line"></span>
+                    <span class="mobile-nav__line"></span>
+                    <span class="mobile-nav__line"></span>
+                  </div>
+                </div>
+                <!-- manager pane -->
+                <span class="label">aside manager pane</span>
+                <div class="manager-pane" style="background-color: black;">
+                  <h3 class="manager-pane__header">your manager</h3>
+                  <div class="manager-pane__row">
+                    <div class="manager-pane__picture">
+                      <span class="manager-pane__status"></span>
+                    </div>
+                    <p class="manager-pane__name">michael e.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <!-- full menu -->
+                <span class="label">aside full menu</span>
+                <div class="menu-full">
+                  <div class="menu-full__item menu-full__item--hover">
+                    <svg class="menu-full__item-icon" version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve"><path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7
+                    	L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"
+                    	/>
+                    </svg>
+                    <span class="menu-full__item-label">General</span>
+                  </div>
+                  <div class="menu-full__item">
+                    <svg class="menu-full__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                    	 viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve">
+                    <path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z"/>
+                    </svg>
+                    <span class="menu-full__item-label">Details</span>
+                  </div>
+                </div>
+                <!-- short menu -->
+                <div class="" style="padding-left: 30px;">
+                  <span class="label">aside short menu</span>
+                  <div class="menu-short">
+                    <div class="menu-short__item menu-short__item--hover">
+                      <svg class="menu-short__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve"><path d="M8.5,3.6l0.9,2.7L9.6,7h0.7h2.8l-2.3,1.6l-0.6,0.4l0.2,0.7l0.9,2.7l-2.3-1.6l-0.6-0.4l-0.6,0.4l-2.3,1.6l0.9-2.7l0.2-0.7
+                      	L6.1,8.6L3.9,7h2.8h0.7l0.2-0.7L8.5,3.6 M8.5,0.4L6.7,6H0.8l4.8,3.5L3.7,15l4.8-3.5l4.8,3.5l-1.8-5.6L16.2,6h-5.9L8.5,0.4L8.5,0.4z"/>
+                      </svg>
+                    </div>
+                    <div class="menu-short__item">
+                      <svg class="menu-short__item-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 14 13" style="enable-background:new 0 0 14 13;" xml:space="preserve"><path d="M0,13h14v-1H0V13z M0,10h14V6H0V10z M9,7h4v2H9V7z M1,7h7v2H1V7z M0,0v4h14V0H0z M5,3H1V1h4V3z M13,3H6V1h7V3z"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3" style="padding-left: 40px;">
+                <!-- scrollbar -->
+                <span class="label">scrollbar</span>
+                <div class="scrollbar">
+                  <div class="scrollbar__indicator"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xl-12">
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>

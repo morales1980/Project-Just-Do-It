@@ -1,75 +1,63 @@
 /* Colors */
 $color-1: #191919;
-$color-2: #282828;
-$color-3: #333333;
-$color-4: #b1b1b1;
-$color-5: #bababa;
-$color-6: #b3b3b3;
-$color-7: #999999;
-$color-8: #979797;
-$color-10: #9c9c9c;
-$color-9: #a6a6a6;
-$color-11: #dadddd;
-$color-12: #e3e3e3;
-$color-13: #f5f5f2;
-$color-14: #f3f3f1;
-$color-15: #fbfbfb;
-$color-16: #f2f2f2;
-$color-17: #f1f3f3;
-$color-18: #ffffff;
-$color-19: #04ae00;
-$color-20: #59b66d;
-$color-21: #ff0000;
-$color-22: #f58220;
-$color-23: #ff9a38;
-$color-24: #56819f;
-$color-25: #80bfca;
+$color-2: #333333;
+$color-3: #b1b1b1;
+$color-4: #a6a6a6;
+$color-5: #e3e3e3;
+$color-6: #f5f5f2;
+$color-7: #ffffff;
+$color-8: #04ae00;
+$color-9: #59b66d;
+$color-10: #ff0000;
+$color-11: #f58220;
+$color-12: #ffa200;
+$color-13: #56819f;
+$color-14: #80bfca;
 
 $brand-color: #ffffff;
 $aside-item-active-border-color: #f58220;
 $aside-item-active-color:  #ffffff;
-$aside-item-active-background-color: #282828;
-$aside-item-color: #999999;
+$aside-item-active-background-color: #333333;
+$aside-item-color: #a6a6a6;
 $aside-background-color: #191919;
 $aside-name-color: #56819f;
+$aside-border-bottom-color: #333333;
 
 $nav-notification-color: #f58220;
-$nav-balance-color: #9c9c9c;
+$nav-icon-color: #a6a6a6;
 $nav-name-color: #56819f;
+$nav-border-color: #e3e3e3;
+$nav-hover-background-color: #f5f5f2;
 
-$body-background-color: #f5f5f2;
+$section-border-color: #f5f5f2;
 $section-background-color: #ffffff;
 $page-header-color: #a6a6a6;
 $section-header-color: #a6a6a6;
 $separator-line-color: #e3e3e3;
 $content-special-color: #f58220;
-$standard-text-color: #333333;
+$section-text-color: #333333;
 $element-border-color: #e3e3e3;
 
 $button-disabled-background-color: #e3e3e3;
-$button-disabled-text-color: #fbfbfb;
-$button-background-1-color: #979797;
+$button-background-1-color: #a6a6a6;
 $button-background-2-color: #f58220;
-
-$chart-selected-background-color: #f3f3f1;
-$chart-selected-text-color: #b1b1b1;
-$chart-unselected-text-color: #56819f;
-$chart-item-1-color: #80bfca;
-$chart-item-2-color: #ff9a38;
-$chart-item-3-color: #59b66d;
-$chart-item-separator-line-color: #e3e3e3;
+$button-text-color: $color-7;
 
 $chat-manager-name-color: #191919;
-$chat-manager-status-color: #04ae00;
-$chat-manager-background-color: #f3f3f1;
+$chat-manager-status-color-1: #04ae00;
+$chat-manager-status-color-2: #e3e3e3;
+$chat-manager-status-text-color: #ffffff;
+$chat-manager-background-color: #e3e3e3;
 $chat-manager-text-color: #191919;
-$chat-user-background-color: #bababa;
+$chat-user-background-color: #b1b1b1;
 $chat-user-text-color: #ffffff;
+$chat-border-color: #e3e3e3;
 
 $checkbox-selected-background-color: #04ae00;
 $checkbox-unselected-background-color: #ffffff;
 $checkbox-list-text-color: #333333;
-$checkbox-list-hover-background-color: #f2f2f2;
+$checkbox-list-display-field-border-color: #e3e3e3;
+$checkbox-list-hover-background-color: #e3e3e3;
 $checkbox-list-hover-link-color: #56819f;
 
 $filter-text-1-color: #a6a6a6;
@@ -77,90 +65,144 @@ $filter-text-2-color: #333333;
 $filter-placeholder-color: #a6a6a6;
 
 $form-input-text-1-color: #333333;
-$form-input-text-2-color: #b3b3b3;
+$form-input-text-2-color: #b1b1b1;
 $form-input-tip-1-color: #ff0000;
 $form-input-tip-2-color: #56819f;
 $form-input-label-color: #a6a6a6;
-$form-input-border-color: #333333;
+$form-input-border-color: #e3e3e3;
+$form-input-hover-border-color: #b1b1b1;
 $form-separator-line-color: #e3e3e3;
 $form-header-color: #a6a6a6;
 
-$link-ur-colorl: #56819f;
-$link-border-color: #dadddd;
-$link-hover-color: #f1f3f3;
+$link-url-color: #56819f;
+$link-border-color: #e3e3e3;
+$link-hover-color: #e3e3e3;
 $link-item-name-color: #a6a6a6;
 
 $negative-information-color: #ff0000;
 
 $scrollbar-position-color: #e3e3e3;
-$scrollbar-background-color: #9c9c9c;
+$scrollbar-background-color: #a6a6a6;
+
+$slider-background-color: #e3e3e3;
+$slider-selection-color: #f58220;
+$slider-value-1-color: #a6a6a6;
+$slider-value-2-color: #333333;
+
+$tab-selected-background-color: #e3e3e3;
+$tab-selected-text-color: #b1b1b1;
+$tab-unselected-text-color: #56819f;
+$tab-item-1-color: #80bfca;
+$tab-item-2-color: #ffa200;
+$tab-item-3-color: #59b66d;
+$tab-item-separator-line-color: #e3e3e3;
 
 $table-column-header-text-color: #a6a6a6;
+$table-column-header-text-hover-color: #333333;
 $table-column-header-hover-background-color: #f5f5f2;
-$table-column-header-hover-text-color: #333333;
-$table-data-content-color: #191919;
-$table-row-hover-background-color: #f1f3f3;
-$table-pagination-digit-color: #56819f;
+$table-data-content-1-color: #191919;
+$table-data-content-2-color: #a6a6a6;
+$table-row-separator: #e3e3e3;
+$table-row-hover-background-color: #f5f5f2;
 $table-arrow-color: #a6a6a6;
+$table-icon-color: #b1b1b1;
+$table-icon-hover-color: #f58220;
+
+$pagination-page-digit-color: #56819f;
+$pagination-page-digit-hover-color: #f58220;
+$pagination-page-active-digit-color: #a6a6a6;
+$pagination-page-active-background-color: #f5f5f2;
+$pagination-arrow-color: #a6a6a6;
+
+$textarea-border-color: #e3e3e3;
+$textarea-placeholder-color: #a6a6a6;
+$textarea-text-color-2: #333333;
+$textarea-hover-border-color: #b1b1b1;
+
 
 /* Font family */
 $font-family: 'Roboto', sans-serif;
 
 /* Font sizes */
-$aside-font-size: 0.875rem;
-$nav-balance-font-size: 1.25rem;
-$nav-name-font-size: 0.8125rem;
+$aside-font-size: 0.875;
+$nav-balance-font-size: 1.25;
+$nav-name-font-size: 0.8125;
 
-$page-header-font-size: 1rem;
-$section-header-font-size: 1rem;
-$section-header-text-font-size: 1rem;
-$text-font-size: 0.875rem;
+$page-header-font-size: 1;
+$section-header-font-size: 1;
+$section-header-text-font-size: 1;
+$section-text-font-size: 0.875;
 
-$date-picker-font-size: 0.875rem;
+$date-picker-font-size: 0.875;
 
-$links-name-font-size: 1rem;
-$links-url-font-size: 1rem;
+$link-large-font-size: 1;
+$link-small-font-size: 0.8125;
 
-$button-font-size: 1.125rem;
+$button-font-size: 1.125;
 
-$form-input-font-size:0.875rem;
+$form-input-font-size:0.875;
 
-$table-column-header-font-size: 0.8125rem;
-$table-data-content-font-size: 0.8125rem;
-$table-pagination-digit-font-size: 1rem;
+$slider-font-size: 0.875;
 
-$checkbox-list-text-font-size: 0.875rem;
+$tab-font-size: 1;
 
-$filter-placeholder-font-size: 0.875rem;
-$postback-placeholder-font-size: 0.75rem;
+$table-column-header-font-size: 0.8125;
+$table-data-content-large-font-size: 1;
+$table-data-content-small-font-size: 0.8125;
+
+$pagination-digit-font-size: 1;
+
+$checkbox-list-text-font-size: 0.875;
+
+$filter-placeholder-font-size: 0.875;
+$postback-placeholder-font-size: 0.75;
+
+$textarea-font-size: 0.75;
+
+$chat-conversation-font-size: 0.875;
+$chat-manager-status-font-size: 0.75;
+$chat-manager-name-font-size: 1.875;
+
 
 /* Font weight */
-$aside-font-weight: 300;
+$aside-light-font-weight: 300;
+$aside-medium-font-weight: 500;
 $nav-balance-font-weight: 400;
 $nav-name-font-weight: 300;
 
 $page-header-font-weight: 500;
 $section-header-font-weight: 700;
 $section-header-text-font-weight: 300;
-$text-font-weight: 300;
+$section-text-font-weight: 300;
 
 $date-picker-font-weight: 300;
 
-$links-name-font-weight: 700;
-$links-url-font-weight: 300;
+$link-large-font-weight: 300;
+$link-small-font-weight: 300;
 
 $button-font-weight: 300;
 
 $form-input-font-weight: 300;
 
+$tab-font-weight: 400;
+
 $table-column-header-font-weight: 700;
 $table-data-content-font-weight: 300;
-$table-pagination-digit-font-weight: 400;
+$table-data-content-bold-font-weight: 700;
+$pagination-digit-font-weight: 400;
 
 $checkbox-list-text-font-weight: 300;
 
 $filter-placeholder-font-weight: 300;
 $postback-placeholder-font-weight: 300;
+
+$textarea-font-weight: 300;
+
+$slider-font-weight: 300;
+
+$chat-conversation-font-weight: 300;
+$chat-manager-status-font-weight: 300;
+$chat-manager-name-font-weight: 500;
 // light - 300
 // regular - 400
 // medium - 500

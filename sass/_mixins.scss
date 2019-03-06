@@ -1,3 +1,32 @@
-@mixin font($font-size, $font-weight) {
-  font: $font-weight $font-size $font-family;
+@mixin font-style($font-size, $font-weight, $color:null, $text-transform:null) {
+  font: $font-weight $font-size+rem $font-family;
+  color: $color;
+  text-transform: $text-transform;
+}
+@mixin button-style($display, $background-color, $width:null, $height:null) {
+  display: $display;
+  @if ($width) {
+    width: $width+px;
+  }
+  @if ($height) {
+    height: $height+px;
+  }
+  background-color: $background-color;
+  border: none;
+  border-radius: 3px;
+}
+@mixin textarea-style($border-color, $width: null, $height: null, $padding: null) {
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border: 1px solid $border-color;
+  border-radius: 3px;
+}
+@mixin input-style($display, $border-color, $width: null, $height: null, $padding: null) {
+  display: $display;
+  width: $width;
+  height: $height;
+  padding: $padding;
+  border: 1px solid $border-color;
+  border-radius: 3px;
 }

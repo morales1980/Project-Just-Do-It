@@ -1,0 +1,26 @@
+.row::before, .row::after {
+  content: "";
+  display: table;
+}
+.row::after {
+  clear: both;
+}
+[class*='col'], [class*='offset'] {
+  float: left;
+  min-height: 1px;
+}
+
+@media (min-width: 1200px) {
+  @for $i from 1 through 12 {
+    $width: percentage(1 / 12) * $i;
+    .col-xl-#{$i} {
+      width: $width;
+    }
+  }
+  @for $i from 1 through 12 {
+    $margin: percentage(1 / 12) * $i;
+    .offset-xl-#{$i} {
+      margin-left: $margin;
+    }
+  }
+}
