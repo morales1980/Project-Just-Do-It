@@ -1,0 +1,17 @@
+.filter-selects {
+  max-width: 1074px;
+  padding: 26px 18px 36px;
+  border-bottom: 1px solid $element-border-color;
+  .field-select {
+    display: inline-block;
+    padding: 0 18px;
+    width: 33%;
+    max-width: none;
+    &:first-of-type {
+      padding: 0;
+    }
+    &:last-of-type {
+      padding: 0;
+    }
+  }
+}

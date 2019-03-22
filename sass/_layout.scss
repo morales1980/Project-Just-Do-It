@@ -1,26 +1,41 @@
-.row::before, .row::after {
+.container-boxed {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+.container-fluid {
+  width: 100%;
+}
+.row-float::before, .row-float::after {
   content: "";
   display: table;
 }
-.row::after {
+.row-float::after {
   clear: both;
 }
-[class*='col'], [class*='offset'] {
-  float: left;
-  min-height: 1px;
+.row-fluid {
+  display: flex;
+  flex-wrap: wrap;
 }
-
-@media (min-width: 1200px) {
-  @for $i from 1 through 12 {
-    $width: percentage(1 / 12) * $i;
-    .col-xl-#{$i} {
-      width: $width;
-    }
-  }
-  @for $i from 1 through 12 {
-    $margin: percentage(1 / 12) * $i;
-    .offset-xl-#{$i} {
-      margin-left: $margin;
-    }
-  }
+.scroll-wrapper-horizontal {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+.scroll-wrapper-vertical {
+  display: block;
+  width: 100%;
+  overflow-y: auto;
+}
+@media(max-width: 767px) {
+  @include grid('sm');
+}
+@media(min-width: 768px) {
+  @include grid('md');
+}
+@media(min-width: 992px) {
+  @include grid('lg');
+}
+@media(min-width: 1200px) {
+  @include grid('xl');
 }

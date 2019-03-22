@@ -1,0 +1,12 @@
+.textarea {
+  @include textarea-style(#e3e3e3, null, null, 18px);
+  @include font-style($textarea-font-size, $textarea-font-weight, $textarea-text-color-2, null);
+  @include placeholder-style {
+    color: $textarea-placeholder-color;
+  }
+  resize: none;
+  width: 100%;
+  &:hover {
+    border-color: $textarea-hover-border-color;
+  }
+}

@@ -1,3 +1,18 @@
+// background-color-primary
+// background-color-secondary
+// background-color-tertiary
+// background-color-quaternary
+// background-color-quinnary
+// background-color-senary
+// background-color-septenary
+
+// hover-color: #f5f5f2;
+// hover-color: #e3e3e3;
+// hover-color: #56819f;
+// hover-color: #b1b1b1;
+// hover-color: #333333;
+// hover-color: #f58220;
+
 /* Colors */
 $color-1: #191919;
 $color-2: #333333;
@@ -22,6 +37,8 @@ $aside-item-color: #a6a6a6;
 $aside-background-color: #191919;
 $aside-name-color: #56819f;
 $aside-border-bottom-color: #333333;
+
+$date-picker-text-color: #333333;
 
 $nav-notification-color: #f58220;
 $nav-icon-color: #a6a6a6;
@@ -59,6 +76,8 @@ $checkbox-list-text-color: #333333;
 $checkbox-list-display-field-border-color: #e3e3e3;
 $checkbox-list-hover-background-color: #e3e3e3;
 $checkbox-list-hover-link-color: #56819f;
+$checkbox-list-link-hover-color: #f58220;
+
 
 $filter-text-1-color: #a6a6a6;
 $filter-text-2-color: #333333;
@@ -119,28 +138,41 @@ $textarea-placeholder-color: #a6a6a6;
 $textarea-text-color-2: #333333;
 $textarea-hover-border-color: #b1b1b1;
 
-
 /* Font family */
 $font-family: 'Roboto', sans-serif;
 
 /* Font sizes */
 $aside-font-size: 0.875;
-$nav-balance-font-size: 1.25;
-$nav-name-font-size: 0.8125;
 
-$page-header-font-size: 1;
-$section-header-font-size: 1;
-$section-header-text-font-size: 1;
-$section-text-font-size: 0.875;
+$button-font-size: 1.125;
+
+$chat-conversation-font-size: 0.875;
+$chat-manager-status-font-size: 0.75;
+$chat-manager-name-font-size: 1.875;
+
+$checkbox-list-text-font-size: 0.875;
 
 $date-picker-font-size: 0.875;
+
+$filter-placeholder-font-size: 0.875;
+
+$form-input-font-size:0.875;
 
 $link-large-font-size: 1;
 $link-small-font-size: 0.8125;
 
-$button-font-size: 1.125;
+$nav-balance-font-size: 1.25;
+$nav-name-font-size: 0.8125;
 
-$form-input-font-size:0.875;
+$page-header-font-size: 1;
+
+$pagination-digit-font-size: 1;
+
+$postback-placeholder-font-size: 0.75;
+
+$section-header-font-size: 1;
+$section-header-text-font-size: 1;
+$section-text-font-size: 0.875;
 
 $slider-font-size: 0.875;
 
@@ -150,59 +182,51 @@ $table-column-header-font-size: 0.8125;
 $table-data-content-large-font-size: 1;
 $table-data-content-small-font-size: 0.8125;
 
-$pagination-digit-font-size: 1;
-
-$checkbox-list-text-font-size: 0.875;
-
-$filter-placeholder-font-size: 0.875;
-$postback-placeholder-font-size: 0.75;
-
 $textarea-font-size: 0.75;
-
-$chat-conversation-font-size: 0.875;
-$chat-manager-status-font-size: 0.75;
-$chat-manager-name-font-size: 1.875;
-
 
 /* Font weight */
 $aside-light-font-weight: 300;
 $aside-medium-font-weight: 500;
-$nav-balance-font-weight: 400;
-$nav-name-font-weight: 300;
 
-$page-header-font-weight: 500;
-$section-header-font-weight: 700;
-$section-header-text-font-weight: 300;
-$section-text-font-weight: 300;
+$button-font-weight: 300;
+
+$chat-conversation-font-weight: 300;
+$chat-manager-status-font-weight: 300;
+$chat-manager-name-font-weight: 500;
+
+$checkbox-list-text-font-weight: 300;
 
 $date-picker-font-weight: 300;
+
+$filter-placeholder-font-weight: 300;
+
+$form-input-font-weight: 300;
 
 $link-large-font-weight: 300;
 $link-small-font-weight: 300;
 
-$button-font-weight: 300;
+$nav-balance-font-weight: 400;
+$nav-name-font-weight: 300;
 
-$form-input-font-weight: 300;
+$page-header-font-weight: 500;
+
+$pagination-digit-font-weight: 400;
+
+$postback-placeholder-font-weight: 300;
+
+$section-header-font-weight: 700;
+$section-header-text-font-weight: 300;
+$section-text-font-weight: 300;
+
+$slider-font-weight: 300;
 
 $tab-font-weight: 400;
 
 $table-column-header-font-weight: 700;
 $table-data-content-font-weight: 300;
 $table-data-content-bold-font-weight: 700;
-$pagination-digit-font-weight: 400;
-
-$checkbox-list-text-font-weight: 300;
-
-$filter-placeholder-font-weight: 300;
-$postback-placeholder-font-weight: 300;
 
 $textarea-font-weight: 300;
-
-$slider-font-weight: 300;
-
-$chat-conversation-font-weight: 300;
-$chat-manager-status-font-weight: 300;
-$chat-manager-name-font-weight: 500;
 // light - 300
 // regular - 400
 // medium - 500

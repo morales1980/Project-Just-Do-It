@@ -1,3 +1,12 @@
+@mixin grid($prefix) {
+  @for $i from 1 through 12 {
+    .col-#{$prefix}-#{$i} {
+      $width: 100% / 12 * $i;
+      flex: 0 0 $width;
+      max-width: $width;
+    }
+  }
+}
 @mixin font-style($font-size, $font-weight, $color:null, $text-transform:null) {
   font: $font-weight $font-size+rem $font-family;
   color: $color;
@@ -6,10 +15,10 @@
 @mixin button-style($display, $background-color, $width:null, $height:null) {
   display: $display;
   @if ($width) {
-    width: $width+px;
+    width: $width;
   }
   @if ($height) {
-    height: $height+px;
+    height: $height;
   }
   background-color: $background-color;
   border: none;
@@ -29,4 +38,10 @@
   padding: $padding;
   border: 1px solid $border-color;
   border-radius: 3px;
+}
+@mixin placeholder-style {
+  &::-webkit-input-placeholder {@content;}
+  &:-moz-placeholder           {@content;}
+  &::-moz-placeholder          {@content;}
+  &:-ms-input-placeholder      {@content;}
 }

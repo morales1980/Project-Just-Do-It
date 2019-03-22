@@ -1,0 +1,16 @@
+.numbers {
+  &__column {
+    max-width: 309px;
+  }
+  &__line {
+    padding: 22px 0 8px;
+    border-bottom: 1px solid $element-border-color;
+  }
+  .section-header {
+    display: inline-block;
+  }
+  .section-text {
+    display: inline-block;
+    float: right;
+  }
+}

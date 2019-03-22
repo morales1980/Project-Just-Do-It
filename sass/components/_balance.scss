@@ -1,0 +1,33 @@
+.balance {
+  display: inline-block;
+  border-left: 1px solid $nav-border-color;
+  border-right: 1px solid $nav-border-color;
+  &__sum {
+    @include font-style($nav-balance-font-size, $nav-balance-font-weight, $nav-icon-color, null);
+    display: inline-block;
+    padding: 18px 30px 18px 34px;
+    margin-right: 20px;
+    margin-left: 16px;
+    position: relative;
+  }
+  &__icon-wallet {
+    display: inline-block;
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 17px;
+    fill: $nav-icon-color;
+  }
+  &__icon-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    width: 11px;
+    fill: $nav-icon-color;
+    cursor: pointer;
+    &:hover {
+      fill: $content-special-color;
+    }
+  }
+}

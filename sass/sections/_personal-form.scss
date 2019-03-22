@@ -1,0 +1,32 @@
+.personal-form {
+  &__form {}
+  &__field-set {
+    border-bottom: 1px solid $form-input-border-color;
+    .personal-form__label {
+      &:first-of-type {
+        padding-top: 43px;
+      }
+      &:last-of-type {
+        padding-bottom: 43px;
+      }
+    }
+  }
+  &__label {
+    max-width: 454px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+  }
+  .section-header {
+    padding: 15px 0;
+    display: inline-block;
+  }
+  .input {
+    width: 309px;
+    display: inline-block;
+  }
+  .button {
+    margin: 32px auto 34px;
+  }
+}

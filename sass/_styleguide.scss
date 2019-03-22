@@ -1,0 +1,776 @@
+.styleguide .container {
+  max-width: 1200px;
+  padding: 0 35px;
+}
+.styleguide .label {
+  @include font-style(0.6875, 300, $color-4, uppercase);
+  display: block;
+  margin: 34px 0;
+  &--links ~ .row {
+    margin: 0.83rem 0;
+  }
+}
+.styleguide .page-header {
+  @include font-style($page-header-font-size, $page-header-font-weight, $page-header-color, uppercase);
+}
+.styleguide .section-header {
+  @include font-style($section-header-font-size, $section-header-font-weight, $section-header-color, none);
+}
+.styleguide .section-text {
+  @include font-style($section-text-font-size, $section-text-font-weight, $section-text-color, none);
+}
+.styleguide .link {
+  @include font-style($link-large-font-size, $link-large-font-weight, $link-url-color, none);
+  text-decoration: none;
+  &--large {
+    font-size: $link-large-font-size+rem;
+  }
+  &--small {
+    font-size: $link-small-font-size+rem;
+    font-weight: $link-small-font-weight;
+  }
+  &--hover {
+    color: $color-11;
+  }
+  &__icon {
+    width: 13px;
+    height: 13px;
+    fill: $link-url-color;
+  }
+  &__icon--hover {
+    fill: $color-11;
+  }
+}
+.styleguide .box {
+  width: 100%;
+  padding: 5px 0;
+  border: 1px solid #ffffff;
+  @include font-style($link-small-font-size, $link-large-font-weight, $color-7, uppercase);
+  text-align: center;
+  &--1 {
+    background-color: $color-1;
+  }
+  &--2 {
+    background-color: $color-10;
+  }
+  &--3 {
+    background-color: $color-8;
+  }
+  &--4 {
+    background-color: $color-2;
+  }
+  &--5 {
+    background-color: $color-13;
+  }
+  &--6 {
+    background-color: $color-9;
+  }
+  &--7 {
+    background-color: $color-4;
+  }
+  &--8 {
+    background-color: $color-14;
+  }
+  &--9 {
+    background-color: $color-11;
+  }
+  &--10 {
+    background-color: $color-3;
+  }
+  &--11 {
+    background-color: $color-7;
+    color: $color-3;
+  }
+  &--12 {
+    background-color: $color-12;
+  }
+  &--13 {
+    background-color: $color-5;
+    color: $color-3;
+  }
+  &--14 {
+    background-color: $color-6;
+    color: $color-3;
+  }
+}
+.styleguide .button {
+  @include button-style(block, $button-background-2-color, 80px, 40px);
+  @include font-style($button-font-size, $button-font-weight, $button-text-color, capitalize);
+  &--cancel {
+    background-color: $button-background-1-color;
+    &-hover {
+      background-color: $color-5;
+    }
+  }
+  &--accept {
+    &-hover {
+      background-color: $color-12;
+    }
+  }
+  &--disabled {
+    background-color: $button-disabled-background-color;
+    width: 170px;
+  }
+}
+.styleguide .checkbox-item {
+  padding: 13px 18px 13px 13px;
+  &--hover {
+    background-color: $checkbox-list-hover-background-color;
+  }
+  &__input:checked ~ .checkbox-item__label > .checkbox-item__display-field:before {
+    //poprosic kamila o pomoc w identyfikacji powodu dlczego nie wyswietla sie font awesome
+    font-family: 'FontAwesome';
+    content: "\f559";
+    position: absolute;
+    color: $color-7;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateY(-50%) translateX(-50%);
+  }
+  &__input:checked ~ .checkbox-item__label > .checkbox-item__display-field {
+    background-color: $checkbox-selected-background-color;
+  }
+  &__label {
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  &__display-field {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $checkbox-list-display-field-border-color;
+    background-color: $checkbox-unselected-background-color;
+    position: relative;
+    margin-bottom: -3px;
+    margin-right: 16px;
+  }
+  &__name {
+    @include font-style($checkbox-list-text-font-size, $checkbox-list-text-font-weight, $checkbox-list-text-color, none);
+    display: inline-block;
+    margin: 0;
+  }
+  &__icon {
+    width: 13px;
+    height: 13px;
+    fill: $checkbox-unselected-background-color;
+    float: right;
+    position: relative;
+    top: 3px;
+  }
+  &__icon--hover {
+    fill: $checkbox-list-hover-link-color;
+  }
+}
+.styleguide .tabs {
+  &__item {
+    @include font-style($tab-font-size, $tab-font-weight, $tab-unselected-text-color, capitalize);
+    display: inline-block;
+    padding: 13px 18px;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    margin: 0 9px;
+    &:first-of-type {
+      margin-left: 0;
+    }
+    &:last-of-type {
+      margin-right: 0;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: red;
+      margin-bottom: -2px;
+      margin-right: 13px;
+    }
+    &--selected {
+      background-color: $tab-selected-background-color;
+      color: $tab-selected-text-color;
+    }
+    &--hover {
+      background-color: $tab-selected-background-color;
+      color: $tab-selected-text-color;
+    }
+  }
+}
+.styleguide .textarea{
+  @include textarea-style(#e3e3e3, null, 150px, 18px);
+  @include font-style($textarea-font-size, $textarea-font-weight, $textarea-text-color-2, null);
+  @include placeholder-style {
+    color: $textarea-placeholder-color;
+  }
+  resize: none;
+  width: 100%;
+  &--hover {
+    border-color: $textarea-hover-border-color;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+.styleguide .input {
+  @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
+  @include input-style(block, $form-input-border-color, 100%, null, 15px)
+  margin-top: 10px;
+  &--hover {
+    border-color: $textarea-hover-border-color;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+.styleguide .input-password {
+  @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
+  margin-top: 10px;
+  position: relative;
+  &__input {
+    @include input-style(block, $form-input-border-color, 100%, null, 15px);
+    @include placeholder-style {
+      color: $textarea-placeholder-color;
+    }
+    padding-left: 50px;
+    &--hover {
+      border-color: $textarea-hover-border-color;
+    }
+    &--error {
+      border-color: $form-input-tip-1-color;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:not(:valid) + svg {
+      fill: $textarea-placeholder-color;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 21px;
+    height: 21px;
+  }
+}
+.styleguide .table-link {
+  @include font-style($table-data-content-large-font-size, $table-data-content-bold-font-weight, $table-data-content-2-color, none);
+  border-collapse: collapse;
+  width: 90%;
+  &__row {
+    border-top: 1px solid $table-row-separator;
+    border-bottom: 1px solid $table-row-separator;
+  }
+  &__row--hover {
+    background-color: $table-row-hover-background-color;
+  }
+  &__cell-line-header {
+    padding: 21px 17px 24px;
+  }
+  &__cell-link {
+    padding: 21px 17px 24px;
+  }
+  &__link {
+    float: right;
+    color: $link-url-color;
+    text-decoration: none;
+    font-weight:$link-small-font-weight;
+  }
+}
+.styleguide .table-digit {
+  @include font-style($table-data-content-large-font-size, $table-data-content-bold-font-weight, $table-data-content-2-color, none);
+  border-collapse: collapse;
+  width: 90%;
+  &__row {
+    border-top: 1px solid $table-row-separator;
+    border-bottom: 1px solid $table-row-separator;
+  }
+  &__row--hover {
+    background-color: $table-row-hover-background-color;
+  }
+  &__cell-line-header {
+    padding: 21px 17px 24px;
+  }
+  &__cell-digit {
+    padding: 21px 17px 24px;
+    color: $table-data-content-1-color;
+    font-weight:$link-small-font-weight;
+    text-align: right;
+  }
+}
+.styleguide .table-sorting {
+  @include font-style($table-data-content-large-font-size, $table-data-content-bold-font-weight, $table-data-content-2-color, none);
+  border-collapse: collapse;
+  width: 90%;
+  min-width: 0;
+  &__row-body {
+    border-top: 1px solid $table-row-separator;
+    border-bottom: 1px solid $table-row-separator;
+  }
+  &__row-body--hover {
+    background-color: $table-row-hover-background-color;
+  }
+  &__cell-header {
+    position: relative;
+    text-align: left;
+    padding: 13px 30px 32px 0px;
+  }
+  &__cell-header-name {
+    padding: 13px 30px 13px 13px;
+    border-radius: 3px;
+    margin-bottom: 19px;
+  }
+  &__cell-header-name--hover {
+    color: $table-column-header-text-hover-color;
+    background-color: $table-column-header-hover-background-color;
+  }
+  &__arrow {
+    position: absolute;
+    top: 21px;
+    left: 123px;
+    width: 7px;
+    fill: $color-7;
+  }
+  &__arrow--hover {
+    fill: $table-arrow-color;
+    cursor: pointer;
+  }
+  &__cell-data {
+    padding: 21px 17px 24px;
+    color: $table-data-content-1-color;
+    font-weight:$link-small-font-weight;
+  }
+}
+.styleguide .table-link-icon {
+  @include font-style($table-data-content-large-font-size, $table-data-content-bold-font-weight, $table-data-content-2-color, none);
+  border-collapse: collapse;
+  width: 90%;
+  &__row {
+    border-top: 1px solid $table-row-separator;
+    border-bottom: 1px solid $table-row-separator;
+  }
+  &__row--hover {
+    background-color: $table-row-hover-background-color;
+    .table-link-icon__icons-link--hover {
+      fill: $table-icon-hover-color;
+    }
+    .table-link-icon__icons-trash {
+      fill: $table-icon-color;
+    }
+  }
+  &__cell-line-header {
+    padding: 21px 17px 24px;
+    width: auto;
+  }
+  &__cell-link {
+    padding: 21px 17px 24px;
+  }
+  &__link {
+    color: $link-url-color;
+    text-decoration: none;
+    font-weight:$link-small-font-weight;
+  }
+  &__icons {
+    display: inline-block;
+    float: right;
+    padding: 0 25px;
+    height: 20px;
+  }
+  &__icons-link {
+    display: inline;
+    width: 16px;
+    margin-right: 23px;
+    cursor: pointer;
+    fill: $section-background-color;
+  }
+  &__icons-trash {
+    display: inline;
+    width: 14px;
+    cursor: pointer;
+    fill: $section-background-color;
+  }
+}
+.styleguide .slider {
+  @include font-style($slider-font-size, $slider-font-weight, $slider-value-1-color, null)
+  padding-bottom: 16px;
+  &__row {
+    @extend .row-float;
+  }
+  &__value-start {
+    display: inline-block;
+    float: left;
+  }
+  &__value-end {
+    display: inline-block;
+    float: right;
+  }
+  &__background {
+    height: 6px;
+    width: 100%;
+    background-color: $slider-background-color;
+  }
+  &__ratio {
+    display: block;
+    height: 6px;
+    width: 70%;
+    background-color: $slider-selection-color;
+  }
+  &__indicator {
+    width: 0;
+    height: 0;
+    margin: 6px 0 15px 67.5%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 24px solid $slider-selection-color;
+    position: relative;
+  }
+  &__value-present {
+    display: inline-block;
+    position: absolute;
+    top: 39px;
+    left: -32px;
+    width: 75px;
+    color: $slider-value-2-color;
+  }
+}
+.styleguide .pagination {
+  position: relative;
+  @include font-style($pagination-digit-font-size, $pagination-digit-font-weight, null, null);
+  &__page-link {
+    display: inline-block;
+    padding: 14px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: $pagination-page-digit-color;
+    text-align: center;
+    &:first-of-type {
+      margin-left: 25px;
+    }
+    &:last-of-type {
+      margin-right: 25px;
+    }
+  }
+  &__page-link--active {
+    color: $pagination-page-active-digit-color;
+    background-color: $pagination-page-active-background-color;
+  }
+  &__page-link--hover {
+    color: $pagination-page-digit-hover-color;
+  }
+  &__arrow-left, &__arrow-right {
+    width: 10px;
+    position: absolute;
+    top: 16px;
+    cursor: pointer;
+    fill: $pagination-arrow-color;
+  }
+  &__arrow--hover {
+    fill: $pagination-page-digit-hover-color;
+  }
+}
+.styleguide .balance {
+  display: inline-block;
+  border-left: 1px solid $nav-border-color;
+  border-right: 1px solid $nav-border-color;
+  &__sum {
+    @include font-style($nav-balance-font-size, $nav-balance-font-weight, $nav-icon-color, null);
+    display: inline-block;
+    padding: 23px 30px 23px 34px;
+    margin-right: 20px;
+    margin-left: 16px;
+    position: relative;
+  }
+  &__icon-wallet {
+    display: inline-block;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 17px;
+    fill: $nav-icon-color;
+  }
+  &__icon-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 11px;
+    fill: $nav-icon-color;
+  }
+}
+.styleguide .member-name {
+  display: inline-block;
+  border-right: 1px solid $nav-border-color;
+  border-left: 1px solid $nav-border-color;
+  @include font-style($nav-name-font-size, $nav-name-font-weight, $nav-name-color, capitalize);
+  &__name {
+    display: inline-block;
+    position: relative;
+    padding: 26px 20px 25px 31px;
+    margin-left: 19px;
+  }
+  &__icon {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 17px;
+    fill: $nav-icon-color;
+  }
+}
+.styleguide .message {
+  display: inline-block;
+  border-right: 1px solid $nav-border-color;
+  border-left: 1px solid $nav-border-color;
+  &:hover {
+    background-color: $nav-hover-background-color;
+    cursor: pointer;
+  }
+  &__button {
+    display: inline-block;
+    padding: 30px 8px;
+    position: relative;
+    margin: 0 21px;
+  }
+  &__icon {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 17px;
+    fill: $nav-icon-color;
+  }
+  &__notification {
+    display: block;
+    width: 8px;
+    padding-bottom: 8px;
+    border-radius: 50%;
+    position: absolute;
+    top: 22px;
+    right: 0;
+    background-color: $content-special-color;
+  }
+}
+.styleguide .logout {
+  display: inline-block;
+  border-right: 1px solid $nav-border-color;
+  border-left: 1px solid $nav-border-color;
+  &:hover {
+    background-color: $nav-hover-background-color;
+    cursor: pointer;
+  }
+  &__button {
+    display: inline-block;
+    padding: 30px 10px;
+    position: relative;
+    margin: 0 18px 0 21px;
+  }
+  &__icon {
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 19px;
+    fill: $nav-icon-color;
+  }
+}
+.styleguide .messenger {
+  &__row {
+    @extend .row-float;
+    border-top: 1px solid $chat-border-color;
+    border-bottom: 1px solid $chat-border-color;
+    padding: 10px 17px;
+    margin: 16px 0 0;
+  }
+  &__manager-picture {
+    border-radius: 50%;
+    background: url('../images/managerpicture.png');
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 10px 0;
+  }
+  &__manager-details {
+    float: left;
+    margin-left: 19px;
+  }
+  &__manager-name {
+    @include font-style($chat-manager-name-font-size, $chat-manager-name-font-weight, $chat-manager-name-color, capitalize);
+    margin: 10px 0;
+  }
+  &__manager-status {
+    @include font-style($chat-manager-status-font-size, $chat-manager-status-font-weight, $chat-manager-status-text-color, null);
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &__info--online {
+    background-color: $chat-manager-status-color-1;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &__info--offline {
+    background-color: $chat-manager-status-color-2;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &__chat {
+    padding: 0 17px 17px;
+  }
+  &__chat-manager {
+    padding-top: 16px;
+  }
+  &__chat-manager-message {
+    @include font-style($chat-conversation-font-size, $chat-conversation-font-weight, $chat-manager-text-color, null);
+    padding: 14px 14px 16px 14px;
+    background-color: $chat-manager-background-color;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    &::before {
+      display: block;
+      content: "";
+      height: 0;
+      width: 0;
+      border-bottom: 10px solid $chat-manager-background-color;
+      border-right: 10px solid transparent;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+  }
+  &__chat-user {
+    padding-top: 16px;
+  }
+  &__chat-user-message {
+    @include font-style($chat-conversation-font-size, $chat-conversation-font-weight, $chat-user-text-color, null);
+    background-color: $chat-user-background-color;
+    padding: 14px 14px 16px 14px;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      height: 0;
+      width: 0;
+      border-top: 10px solid $chat-user-background-color;
+      border-left: 10px solid transparent;
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+    }
+  }
+}
+.styleguide .logo {
+  display: inline-block;
+  padding: 10px 0 13px;
+}
+.styleguide .mobile-nav {
+  padding: 15px;
+  &__line {
+    display: block;
+    width: 18px;
+    border-top: 2px solid $aside-item-color;
+    &:nth-child(2) {
+      margin: 5px 0;
+    }
+  }
+}
+.styleguide .manager-pane {
+  &__header {
+    @include font-style($aside-font-size, $aside-medium-font-weight, $aside-item-color, uppercase);
+    padding: 28px 0 19px 20px;
+  }
+  &__row {
+    @extend .row-float;
+  }
+  &__picture {
+    // phone dimensions
+    // width: 26px;
+    // height: 26px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: url('../images/managerpicture.png') 0/cover;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+  }
+  &__status {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: $chat-manager-status-color-1;
+  }
+  &__name {
+    @include font-style($aside-font-size, $aside-light-font-weight, $aside-name-color, capitalize);
+    float: right;
+    text-align: left;
+  }
+}
+.styleguide .menu-full {
+  background-color: $aside-background-color;
+  padding: 8px 0 26px 0;
+  border-bottom: 1px solid $aside-border-bottom-color;
+  &__item {
+    padding-left: 14px;
+    border-left: 4px solid transparent;
+  }
+  &__item--hover {
+    cursor: pointer;
+    border-left: 4px solid $aside-item-active-border-color;
+    background-color: $aside-item-active-background-color;
+    .menu-full__item-label
+    {
+      color: $aside-item-active-color;
+    }
+    .menu-full__item-icon {
+      fill: $aside-item-active-color;
+    }
+  }
+  &__item-icon {
+    fill: $aside-item-color;
+    width: 14px;
+  }
+  &__item-label {
+    @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);
+    padding: 15px 0 15px 13px;
+    display: inline-block;
+  }
+}
+.styleguide .menu-short {
+  width: 54px;
+  background-color: $aside-background-color;
+  padding: 8px 0 26px 0;
+  border-bottom: 1px solid $aside-border-bottom-color;
+  &__item {
+    border-left: 4px solid transparent;
+    width: 54px;
+    padding: 12px 20px 12px 14px;
+  }
+  &__item--hover {
+    cursor: pointer;
+    border-left: 4px solid $aside-item-active-border-color;
+    background-color: $aside-item-active-background-color;
+    .menu-short__item-icon {
+      fill: $aside-item-active-color;
+    }
+  }
+  &__item-icon {
+    fill: $aside-item-color;
+    width: 16px;
+    display: inline;
+  }
+}
+.styleguide .scrollbar {
+  width: 16px;
+  background-color: $scrollbar-background-color;
+  height: 40vh;
+  &__indicator {
+    background-color: $scrollbar-position-color;
+    height: 42%;
+  }
+}

@@ -1,0 +1,27 @@
+.button {
+  @include button-style(block, $button-background-2-color, 126px, 42px);
+  @include font-style($button-font-size, $button-font-weight, $button-text-color, capitalize);
+  padding: 0;
+  &--cancel {
+    background-color: $button-background-1-color;
+    &:hover {
+      cursor: pointer;
+      background-color: $color-5;
+    }
+  }
+  &--accept {
+    &:hover {
+      cursor: pointer;
+      background-color: $color-12;
+    }
+  }
+  &--disabled {
+    background-color: $button-disabled-background-color;
+    width: 170px;
+    cursor: not-allowed;
+  }
+  &__icon {
+    width: 16px;
+    fill: $button-text-color;
+  }
+}

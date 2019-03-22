@@ -1,0 +1,35 @@
+.pagination {
+  position: relative;
+  @include font-style($pagination-digit-font-size, $pagination-digit-font-weight, null, null);
+  &__page-link {
+    display: inline-block;
+    padding: 14px 17px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: $pagination-page-digit-color;
+    text-align: center;
+    &:first-of-type {
+      margin-left: 25px;
+    }
+    &:last-of-type {
+      margin-right: 25px;
+    }
+    &:hover {
+      color: $pagination-page-digit-hover-color;
+    }
+  }
+  &__page-link--active {
+    color: $pagination-page-active-digit-color;
+    background-color: $pagination-page-active-background-color;
+  }
+  &__arrow-left, &__arrow-right {
+    width: 10px;
+    position: absolute;
+    top: 16px;
+    cursor: pointer;
+    fill: $pagination-arrow-color;
+    &:hover {
+      fill: $pagination-page-digit-hover-color;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.slider {
+  @include font-style($slider-font-size, $slider-font-weight, $slider-value-1-color, null)
+  padding-bottom: 16px;
+  &__row {
+    @extend .row-float;
+  }
+  &__value-start {
+    display: inline-block;
+    float: left;
+  }
+  &__value-end {
+    display: inline-block;
+    float: right;
+  }
+  &__background {
+    height: 6px;
+    width: 100%;
+    background-color: $slider-background-color;
+  }
+  &__ratio {
+    display: block;
+    height: 6px;
+    width: 70%;
+    background-color: $slider-selection-color;
+  }
+  &__indicator {
+    width: 0;
+    height: 0;
+    margin: 6px 0 15px 67.5%;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 24px solid $slider-selection-color;
+    position: relative;
+  }
+  &__value-present {
+    display: inline-block;
+    position: absolute;
+    top: 39px;
+    left: -32px;
+    width: 75px;
+    color: $slider-value-2-color;
+  }
+}

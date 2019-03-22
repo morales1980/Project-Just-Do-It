@@ -1,0 +1,31 @@
+.datepicker {
+  display: inline-block;
+  border: 1px solid $element-border-color;
+  border-radius: 3px;
+  padding: 3px 15px;
+  &__start {
+    @include font-style($date-picker-font-size, $date-picker-font-weight, $date-picker-text-color, null);
+    width: 133px;
+    border: none;
+    border-right: 1px solid $element-border-color;
+    padding: 9px 0 8px;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__end {
+    @include font-style($date-picker-font-size, $date-picker-font-weight, $date-picker-text-color, null);
+    padding: 10px 0;
+    width: 133px;
+    padding: 9px 0 8px 15px;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+  &__icon {
+    display: inline-block;
+    width: 13px;
+    fill: $nav-icon-color;
+  }
+}

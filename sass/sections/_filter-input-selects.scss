@@ -1,0 +1,21 @@
+.filter-input-selects {
+  max-width: 1074px;
+  padding: 28px 18px;
+  border-bottom: 1px solid $element-border-color;
+  .field-input {
+    display: inline-block;
+    max-width: 436px;
+    width: 100%;
+  }
+  .field-select {
+    display: inline-block;
+    padding: 0 18px;
+    max-width: 460px;
+    width: 100%;
+  }
+  .field-select-icon {
+    display: inline-block;
+    max-width: 133px;
+    width: 100%;
+  }
+}

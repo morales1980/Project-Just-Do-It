@@ -1,0 +1,53 @@
+.checkbox-item {
+  padding: 13px 18px 13px 13px;
+  &:hover {
+    background-color: $checkbox-list-hover-background-color;
+  }
+  &:hover .checkbox-item__icon {
+    fill: $checkbox-list-hover-link-color;
+  }
+  &__input:checked ~ .checkbox-item__label > .checkbox-item__display-field:before {
+    font-family: 'FontAwesome';
+    content: "\f559";
+    position: absolute;
+    color: $color-7;
+    // top: 50%;
+    // left: 50%;
+    // transform: translateY(-50%) translateX(-50%);
+  }
+  &__input:checked ~ .checkbox-item__label > .checkbox-item__display-field {
+    background-color: $checkbox-selected-background-color;
+  }
+  &__label {
+    cursor: pointer;
+    font-size: 0.875rem;
+  }
+  &__display-field {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid $checkbox-list-display-field-border-color;
+    background-color: $checkbox-unselected-background-color;
+    position: relative;
+    margin-bottom: -3px;
+    margin-right: 16px;
+  }
+  &__name {
+    @include font-style($checkbox-list-text-font-size, $checkbox-list-text-font-weight, $checkbox-list-text-color, none);
+    display: inline-block;
+    margin: 0;
+  }
+  &__link {
+    &:hover .checkbox-item__icon {
+      fill: $checkbox-list-link-hover-color;
+    }
+  }
+  &__icon {
+    width: 13px;
+    height: 13px;
+    fill: $checkbox-unselected-background-color;
+    float: right;
+    position: relative;
+    top: 3px;
+  }
+}

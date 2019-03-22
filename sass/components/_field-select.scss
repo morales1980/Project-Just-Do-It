@@ -1,0 +1,44 @@
+.field-select {
+  position: relative;
+  z-index: 1;
+  &__label {
+    display: block;
+    position: relative;
+  }
+  &__header {
+    @extend .section-header;
+    padding-bottom: 17px;
+  }
+  &__arrow {
+    width: 11px;
+    position: absolute;
+    bottom: 21px;
+    right: 16px;
+    z-index: 2;
+    fill: $filter-text-1-color;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__input {
+    @include font-style($form-input-font-size, $form-input-font-weight, $filter-text-2-color, null);
+    @include input-style(block, $form-input-border-color, 100%, null, 15px);
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:hover {
+      border-color: $textarea-hover-border-color;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:not(:focus):invalid {
+      color: $filter-text-1-color;
+    }
+  }
+  &__option {}
+}

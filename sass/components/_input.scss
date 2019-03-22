@@ -1,0 +1,13 @@
+.input {
+  @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
+  @include input-style(block, $form-input-border-color, 100%, null, 15px)
+  @include placeholder-style {
+    color: $textarea-placeholder-color;
+  }
+  &:hover {
+    border-color: $textarea-hover-border-color;
+  }
+  &:focus {
+    outline: 0;
+  }
+}

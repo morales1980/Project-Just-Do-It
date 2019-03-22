@@ -1,0 +1,91 @@
+.messenger {
+  &__row {
+    @extend .row-float;
+    border-top: 1px solid $chat-border-color;
+    border-bottom: 1px solid $chat-border-color;
+    padding: 10px 17px;
+    margin: 16px 0 0;
+  }
+  &__manager-picture {
+    border-radius: 50%;
+    background: url('../images/managerpicture.png');
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 10px 0;
+  }
+  &__manager-details {
+    float: left;
+    margin-left: 19px;
+  }
+  &__manager-name {
+    @include font-style($chat-manager-name-font-size, $chat-manager-name-font-weight, $chat-manager-name-color, capitalize);
+    margin: 10px 0;
+  }
+  &__manager-status {
+    @include font-style($chat-manager-status-font-size, $chat-manager-status-font-weight, $chat-manager-status-text-color, null);
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &__info--online {
+    background-color: $chat-manager-status-color-1;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &__info--offline {
+    background-color: $chat-manager-status-color-2;
+    padding: 5px;
+    border-radius: 3px;
+  }
+  &__chat {
+    padding: 0 17px 17px;
+  }
+  &__chat-manager {
+    padding-top: 16px;
+  }
+  &__chat-manager-message {
+    @include font-style($chat-conversation-font-size, $chat-conversation-font-weight, $chat-manager-text-color, null);
+    padding: 14px 14px 16px 14px;
+    background-color: $chat-manager-background-color;
+    border-radius: 3px;
+    border-top-left-radius: 0;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    &::before {
+      display: block;
+      content: "";
+      height: 0;
+      width: 0;
+      border-bottom: 10px solid $chat-manager-background-color;
+      border-right: 10px solid transparent;
+      position: absolute;
+      top: -10px;
+      left: 0;
+    }
+  }
+  &__chat-user {
+    padding-top: 16px;
+  }
+  &__chat-user-message {
+    @include font-style($chat-conversation-font-size, $chat-conversation-font-weight, $chat-user-text-color, null);
+    background-color: $chat-user-background-color;
+    padding: 14px 14px 16px 14px;
+    border-radius: 3px;
+    border-bottom-right-radius: 0;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    &::after {
+      display: block;
+      content: "";
+      height: 0;
+      width: 0;
+      border-top: 10px solid $chat-user-background-color;
+      border-left: 10px solid transparent;
+      position: absolute;
+      bottom: -10px;
+      right: 0;
+    }
+  }
+}

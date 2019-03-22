@@ -1,0 +1,32 @@
+.link-generator {
+    border-top: 1px solid $element-border-color;
+    padding: 19px 17px 22px;
+    height: 82px;
+  .input {
+    height: 40px;
+    min-width: 121px;
+    width: calc(100% - 282px);
+    display: block;
+    float: left;
+  }
+  .button--disabled {
+    height: 40px;
+    width: 149px;
+    margin: 0 19px;
+    padding: 0 19px 0 53px;
+    display: block;
+    float: left;
+    position: relative;
+  }
+  .button__icon {
+    position: absolute;
+    top: 16px;
+    left: 20px;
+  }
+  .button--accept {
+    height: 40px;
+    width: 95px;
+    display: block;
+    float: left;
+  }
+}

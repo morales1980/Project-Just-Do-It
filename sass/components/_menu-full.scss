@@ -1,0 +1,30 @@
+.menu-full {
+  background-color: $aside-background-color;
+  padding: 8px 0 26px 0;
+  border-bottom: 1px solid $aside-border-bottom-color;
+  &__item {
+    padding-left: 14px;
+    border-left: 4px solid transparent;
+    &:hover {
+      cursor: pointer;
+      border-left: 4px solid $aside-item-active-border-color;
+      background-color: $aside-item-active-background-color;
+      .menu-full__item-label
+      {
+        color: $aside-item-active-color;
+      }
+      .menu-full__item-icon {
+        fill: $aside-item-active-color;
+      }
+    }
+  }
+  &__item-icon {
+    fill: $aside-item-color;
+    width: 14px;
+  }
+  &__item-label {
+    @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);
+    padding: 15px 0 15px 13px;
+    display: inline-block;
+  }
+}

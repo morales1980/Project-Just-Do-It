@@ -1,0 +1,58 @@
+.field-select-icon {
+  width: 131px;
+  position: relative;
+  z-index: 1;
+  &__label {
+    display: inline-block;
+    position: relative;
+  }
+  &__header {
+    @extend .section-header;
+    padding-bottom: 17px;
+  }
+  &__icon {
+    background-image: url('../images/flag-uk.png');
+    display: block;
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 51px;
+    left: 15px;
+    z-index: 2;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__arrow {
+    width: 11px;
+    position: absolute;
+    bottom: 21px;
+    right: 16px;
+    z-index: 2;
+    fill: $filter-text-1-color;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__input {
+    @include font-style($form-input-font-size, $form-input-font-weight, $filter-text-2-color, null);
+    @include input-style(block, $form-input-border-color, 131px, null, 15px 0 15px 60px);
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    &::-ms-expand {
+      display: none;
+    }
+    &:hover {
+      border-color: $textarea-hover-border-color;
+      cursor: pointer;
+    }
+    &:focus {
+      outline: 0;
+    }
+    &:not(:focus):invalid {
+      color: $filter-text-1-color;
+    }
+  }
+  &__option {}
+}

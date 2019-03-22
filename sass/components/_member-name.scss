@@ -1,0 +1,18 @@
+.member-name {
+  display: inline-block;
+  border-right: 1px solid $nav-border-color;
+  @include font-style($nav-name-font-size, $nav-name-font-weight, $nav-name-color, capitalize);
+  &__name {
+    display: inline-block;
+    position: relative;
+    padding: 23px 20px 22px 31px;
+    margin-left: 19px;
+  }
+  &__icon {
+    position: absolute;
+    top: 23px;
+    left: 0;
+    width: 17px;
+    fill: $nav-icon-color;
+  }
+}

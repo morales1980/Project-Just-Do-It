@@ -1,0 +1,9 @@
+.scrollbar {
+  width: 16px;
+  background-color: $scrollbar-background-color;
+  height: 40vh;
+  &__indicator {
+    background-color: $scrollbar-position-color;
+    height: 42%;
+  }
+}

@@ -1,0 +1,14 @@
+.datepicker-module {
+  margin: 33px auto 36px;
+  width: 379px;
+  .button {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    &__icon {
+      fill: $button-text-color;
+      width: 15px;
+    }
+  }
+}

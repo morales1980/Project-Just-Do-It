@@ -1,0 +1,22 @@
+.link {
+  @include font-style($link-large-font-size, $link-large-font-weight, $link-url-color, none);
+  text-decoration: none;
+  &--large {
+    font-size: $link-large-font-size+rem;
+  }
+  &--small {
+    font-size: $link-small-font-size+rem;
+    font-weight: $link-small-font-weight;
+  }
+  &:hover {
+    color: $color-11;
+  }
+  &__icon {
+    width: 13px;
+    height: 13px;
+    fill: $link-url-color;
+    &:hover {
+      fill: $color-11;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.table-link {
+  @include font-style($table-data-content-large-font-size, $table-data-content-bold-font-weight, $table-data-content-2-color, none);
+  border-collapse: collapse;
+  width: 100%;
+  &__row {
+    border-top: 1px solid $table-row-separator;
+    border-bottom: 1px solid $table-row-separator;
+    &:hover {
+      background-color: $table-row-hover-background-color;
+    }
+  }
+  &__cell-line-header {
+    padding: 21px 17px 24px;
+  }
+  &__cell-link {
+    padding: 21px 17px 24px;
+  }
+  &__link {
+    float: right;
+    color: $link-url-color;
+    text-decoration: none;
+    font-weight:$link-large-font-weight;
+  }
+}

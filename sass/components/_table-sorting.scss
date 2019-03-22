@@ -1,0 +1,44 @@
+.table-sorting {
+  @include font-style($table-data-content-large-font-size, $table-data-content-bold-font-weight, $table-data-content-2-color, none);
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 1300px;
+  max-width: 100%;
+  &__row-body {
+    border-top: 1px solid $table-row-separator;
+    border-bottom: 1px solid $table-row-separator;
+    &:hover {
+      background-color: $table-row-hover-background-color;
+    }
+  }
+  &__cell-header {
+    text-align: left;
+    padding: 13px 0px 32px;
+  }
+  &__cell-header-name {
+    position: relative;
+    padding: 13px 30px 13px 13px;
+    border-radius: 3px;
+    margin-bottom: 19px;
+    &:hover {
+      color: $table-column-header-text-hover-color;
+      background-color: $table-column-header-hover-background-color;
+      .table-sorting__arrow {
+        fill: $table-arrow-color;
+        cursor: pointer;
+      }
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 21px;
+    right: 10px;
+    width: 7px;
+    fill: $color-7;
+  }
+  &__cell-data {
+    padding: 21px 17px 24px;
+    color: $table-data-content-1-color;
+    font-weight:$link-small-font-weight;
+  }
+}

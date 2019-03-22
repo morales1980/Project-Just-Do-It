@@ -1,0 +1,35 @@
+.manager-pane {
+  &__header {
+    @include font-style($aside-font-size, $aside-medium-font-weight, $aside-item-color, uppercase);
+    padding: 28px 0 19px 20px;
+  }
+  &__row {
+    @extend .row-float;
+  }
+  &__picture {
+    // phone dimensions
+    // width: 26px;
+    // height: 26px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: url('../images/managerpicture.png') 0/cover;
+    position: relative;
+    margin-left: 20px;
+    float: left;
+  }
+  &__status {
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: $chat-manager-status-color-1;
+  }
+  &__name {
+    @include font-style($aside-font-size, $aside-light-font-weight, $aside-name-color, capitalize);
+    float: right;
+    text-align: left;
+  }
+}
