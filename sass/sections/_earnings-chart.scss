@@ -1,13 +1,14 @@
 .earnings-chart {
-  max-width: 685px;
-  padding: 0 15px;
+  max-width: 688px;
+  padding: 76px 15px 0;
   .section-header {
-    padding-bottom: 43px;
+    padding-bottom: 32px;
     margin-left: -15px;
   }
   &__canvas-wrapper {
     width: 655px;
   }
   &__canvas {
+    margin-bottom: 45px;
   }
 }

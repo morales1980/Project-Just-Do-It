@@ -1,6 +1,13 @@
 .numbers {
+  max-width: 688px;
+  margin: 0 auto;
   &__column {
-    max-width: 309px;
+    margin-right: 63px;
+    width: 309px;
+    display: inline-block;
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
   &__line {
     padding: 22px 0 8px;

@@ -12,6 +12,9 @@
     &:focus {
       outline: none;
     }
+    &:hover {
+      cursor: pointer;
+    }
   }
   &__end {
     @include font-style($date-picker-font-size, $date-picker-font-weight, $date-picker-text-color, null);
@@ -21,6 +24,9 @@
     border: none;
     &:focus {
       outline: none;
+    }
+    &:hover {
+      cursor: pointer;
     }
   }
   &__icon {

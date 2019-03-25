@@ -1,0 +1,26 @@
+.login {
+  width: 772px;
+  &__buttons {
+    padding: 47px 47px 55px;
+    height: 142px;
+  }
+  .page-header {
+    padding: 19px 0 15px 18px;
+    border-bottom: 1px solid $element-border-color;
+  }
+  .input-icon, .input-password, .button {
+    display: inline-block;
+    float: left;
+  }
+  .input-password {
+    margin: 0 18px;
+  }
+  .input-icon__input, .input-password__input {
+    width: 213px;
+    height: 40px;
+  }
+  .button {
+    width: 167px;
+    height: 40px;
+  }
+}

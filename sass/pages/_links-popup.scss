@@ -1,0 +1,19 @@
+.links-popup {
+  max-width: 1074px;
+  &__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    fill: $color-3;
+    &:hover {
+      fill: $color-11;
+      cursor: pointer;
+    }
+  }
+  .page-header {
+    position: relative;
+    padding: 20px 17px 16px;
+    border-bottom: 1px solid $element-border-color;
+  }
+}

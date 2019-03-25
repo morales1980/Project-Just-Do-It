@@ -1,0 +1,52 @@
+.postback {
+  .page-header {
+    padding: 19px 18px 16px;
+    border-bottom: 1px solid $element-border-color;
+  }
+  .section-text {
+    padding: 35px 17px 4px;
+  }
+  .field-textarea {
+    padding: 21px 18px 0;
+    float: left;
+    width: 50%;
+    &:last-of-type {
+      padding-left: 0;
+    }
+    &__textarea {
+      height: 185px;
+    }
+  }
+  .filter-selects {
+    max-width: none;
+  }
+  .field-select__header {
+    padding-bottom: 21px;
+  }
+  .section-header__span {
+    color: $color-10;
+  }
+  .scroll-wrapper-vertical {
+    height: 176px;
+  }
+  .checklist-one-column, .slider {
+    float: left;
+    width: 50%;
+  }
+  .slider {
+    padding: 26px 20px;
+    &__header {
+      padding-bottom: 34px;
+    }
+    &__row {
+      padding-bottom: 9px;
+    }
+  }
+  .row-float:last-of-type {
+    border-top: 1px solid $element-border-color;
+  }
+  .button {
+    float: right;
+    margin: 19px 23px 22px;
+  }
+}

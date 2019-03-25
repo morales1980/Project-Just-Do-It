@@ -21,6 +21,32 @@
   &__item-icon {
     fill: $aside-item-color;
     width: 14px;
+    &--general {
+      width: 16px;
+      margin-right: -2px;
+    }
+    &--details {
+      width: 14px;
+    }
+    &--links {
+      width: 16px;
+      margin-right: -2px;
+    }
+    &--banners {
+      width: 14px;
+    }
+    &--personal {
+      width: 10px;
+      margin-right: 4px;
+    }
+    &--payout {
+      width: 13px;
+      margin-right: 1px;
+    }
+    &--postback {
+      width: 13px;
+      margin-right: 1px;
+    }
   }
   &__item-label {
     @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);

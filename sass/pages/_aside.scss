@@ -1,0 +1,8 @@
+.aside {
+  height: 100vh;
+  background-color: $aside-background-color;
+  max-width: 188px;
+  .logo, .nav-toggle {
+    float: left;
+  }
+}

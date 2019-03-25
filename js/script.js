@@ -1,11 +1,27 @@
 // <input> datepicker instance
 (function() {
-  var pickerOne = new Pikaday({
-    field: document.getElementById('dpicker-start'),
+  var pickerGeneralOne = new Pikaday({
+    field: document.getElementById('general-dpicker-start'),
     format: 'DD.MM.YYYY'
   });
-  var pickerTwo = new Pikaday({
-    field: document.getElementById('dpicker-end'),
+  var pickerGeneralTwo = new Pikaday({
+    field: document.getElementById('general-dpicker-end'),
+    format: 'DD.MM.YYYY'
+  });
+  var pickerDetailsOne = new Pikaday({
+    field: document.getElementById('details-dpicker-start'),
+    format: 'DD.MM.YYYY'
+  });
+  var pickerDetailsTwo = new Pikaday({
+    field: document.getElementById('details-dpicker-end'),
+    format: 'DD.MM.YYYY'
+  });
+  var pickerPayoutOne = new Pikaday({
+    field: document.getElementById('payout-dpicker-start'),
+    format: 'DD.MM.YYYY'
+  });
+  var pickerPayoutTwo = new Pikaday({
+    field: document.getElementById('payout-dpicker-end'),
     format: 'DD.MM.YYYY'
   });
 })();

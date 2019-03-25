@@ -29,7 +29,8 @@
   }
   &__name {
     @include font-style($aside-font-size, $aside-light-font-weight, $aside-name-color, capitalize);
-    float: right;
+    float: left;
     text-align: left;
+    margin-left: 10px;
   }
 }

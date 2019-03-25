@@ -662,11 +662,18 @@
   }
 }
 .styleguide .logo {
-  display: inline-block;
-  padding: 10px 0 13px;
+  display: block;
+  margin: 0;
+  line-height: 1rem;
+  &__image {
+    display: inline-block;
+    padding: 10px 0 13px;
+  }
 }
-.styleguide .mobile-nav {
+.styleguide .nav-toggle {
+  display: block;
   padding: 15px;
+  margin: 0;
   &__line {
     display: block;
     width: 18px;
@@ -772,5 +779,57 @@
   &__indicator {
     background-color: $scrollbar-position-color;
     height: 42%;
+  }
+}
+.styleguide .input-chat {
+  position: relative;
+  &__input {
+    @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
+    @include input-style(block, $form-input-border-color, 100%, null, 15px);
+    @include placeholder-style {
+      color: $textarea-placeholder-color;
+    }
+    padding-left: 40px;
+    &:hover {
+      border-color: $textarea-hover-border-color;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:not(:valid) + .input-chat__icon {
+      fill: $textarea-placeholder-color;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    width: 15px;
+  }
+}
+.styleguide .input-icon {
+  position: relative;
+  &__input {
+    @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
+    @include input-style(block, $form-input-border-color, 100%, null, 15px);
+    @include placeholder-style {
+      color: $textarea-placeholder-color;
+    }
+    padding-left: 50px;
+    &:hover {
+      border-color: $textarea-hover-border-color;
+    }
+    &:focus {
+      outline: none;
+    }
+    &:not(:valid) + .input-icon__icon {
+      fill: $textarea-placeholder-color;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    width: 21px;
   }
 }

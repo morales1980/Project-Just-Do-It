@@ -3,8 +3,7 @@
     @extend .row-float;
     border-top: 1px solid $chat-border-color;
     border-bottom: 1px solid $chat-border-color;
-    padding: 10px 17px;
-    margin: 16px 0 0;
+    padding: 10px 19px;
   }
   &__manager-picture {
     border-radius: 50%;
@@ -38,7 +37,7 @@
     border-radius: 3px;
   }
   &__chat {
-    padding: 0 17px 17px;
+    padding: 0 19px 17px;
   }
   &__chat-manager {
     padding-top: 16px;

@@ -1,0 +1,23 @@
+.chat-message {
+  border-top: 1px solid $element-border-color;
+  padding: 19px;
+  .input-chat {
+    width: calc(100% - 112px);
+    min-width: 1px;
+    display: block;
+    float: left;
+  }
+  .input-chat__input {
+    height: 40px;
+  }
+  .input-chat__icon {
+    top: 13px;
+  }
+  .button--accept {
+    width: 95px;
+    height: 40px;
+    float: left;
+    display: block;
+    margin-left: 17px;
+  }
+}

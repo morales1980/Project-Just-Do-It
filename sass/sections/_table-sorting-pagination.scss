@@ -4,4 +4,7 @@
     display: block;
     margin: 22px auto 24px;
   }
+  .pagination__page-link:hover {
+    background-color: $table-row-hover-background-color;
+  }
 }

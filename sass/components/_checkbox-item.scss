@@ -1,5 +1,6 @@
 .checkbox-item {
-  padding: 13px 18px 13px 13px;
+  padding: 13px;
+  margin-right: 16px;
   &:hover {
     background-color: $checkbox-list-hover-background-color;
   }

@@ -1,4 +1,4 @@
-.input-password {
+.input-icon {
   position: relative;
   &__input {
     @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
@@ -6,22 +6,21 @@
     @include placeholder-style {
       color: $textarea-placeholder-color;
     }
-    padding-left: 50px;
+    padding-left: 40px;
     &:hover {
       border-color: $textarea-hover-border-color;
     }
     &:focus {
       outline: none;
     }
-    &:not(:valid) + .input-password__icon {
+    &:not(:valid) + .input-icon__icon {
       fill: $textarea-placeholder-color;
     }
   }
   &__icon {
     position: absolute;
-    top: 11px;
-    left: 14px;
-    width: 21px;
-    height: 21px;
+    top: 13px;
+    left: 16px;
+    width: 13px;
   }
 }

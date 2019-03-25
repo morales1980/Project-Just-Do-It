@@ -1,27 +1,21 @@
-.input-password {
-  position: relative;
-  &__input {
+.field-textarea {
+  &__label {}
+  &__header {
+    @extend .section-header;
+    padding-bottom: 21px;
+  }
+  &__textarea {
     @include font-style($form-input-font-size, $form-input-font-weight, $form-input-text-1-color, null);
     @include input-style(block, $form-input-border-color, 100%, null, 15px);
     @include placeholder-style {
       color: $textarea-placeholder-color;
     }
-    padding-left: 50px;
+    resize: none;
     &:hover {
       border-color: $textarea-hover-border-color;
     }
     &:focus {
-      outline: none;
+      outline: 0;
     }
-    &:not(:valid) + .input-password__icon {
-      fill: $textarea-placeholder-color;
-    }
-  }
-  &__icon {
-    position: absolute;
-    top: 11px;
-    left: 14px;
-    width: 21px;
-    height: 21px;
   }
 }

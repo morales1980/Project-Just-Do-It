@@ -1,6 +1,9 @@
 .slider {
   @include font-style($slider-font-size, $slider-font-weight, $slider-value-1-color, null)
   padding-bottom: 16px;
+  &__header {
+    @extend .section-header;
+  }
   &__row {
     @extend .row-float;
   }

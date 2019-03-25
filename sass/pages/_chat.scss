@@ -1,0 +1,18 @@
+.chat {
+  width: 1174px;
+  &__close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 12px;
+    fill: $color-3;
+    &:hover {
+      fill: $color-11;
+      cursor: pointer;
+    }
+  }
+  .page-header {
+    padding: 19px;
+    position: relative;
+  }
+}

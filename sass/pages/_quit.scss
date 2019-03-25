@@ -1,0 +1,17 @@
+.quit {
+  width: 359px;
+  .page-header {
+    padding: 31px 23px 23px;
+    border-bottom: 1px solid $element-border-color;
+    text-transform: none;
+  }
+  .button {
+    float: right;
+    margin: 23px 21px;
+    width: 95px;
+    height: 40px;
+  }
+  .button--cancel {
+    margin-right: 0;
+  }
+}
