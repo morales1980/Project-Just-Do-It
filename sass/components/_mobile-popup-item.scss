@@ -1,0 +1,46 @@
+.mobile-popup-item {
+  height: 47px;
+  padding: 15px 0 15px 14px;
+  border-left: 4px solid transparent;
+  @extend .row-float;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    border-left: 4px solid $aside-item-active-border-color;
+    background-color: $aside-item-active-background-color;
+    .mobile-popup-item__icon {
+      fill: $aside-item-active-color;
+    }
+    .mobile-popup-item__label {
+      color: $aside-item-active-color;
+    }
+  }
+  &__icon {
+    fill: $aside-item-color;
+    width: 15px;
+    display: block;
+    float: left;
+  }
+  &__status {
+    position: absolute;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    left: 22px;
+    top: 13px;
+    background-color: $content-special-color;
+  }
+  &__label {
+    @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);
+    padding-left: 13px;
+    display: block;
+    float: left;
+    transition: 2s opacity;
+    opacity: 0;
+    @media(max-width: 767px) {
+      display: none;
+      opacity: 0;
+    }
+  }
+}

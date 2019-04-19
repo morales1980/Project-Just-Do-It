@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "npm-run-all test:*",
+        "test": "",
         "test:html": "globstar nu-html-checker *.html",
         "init-project": "npm install && npm-run-all init:*",
         "init:dirs": "mkdirp css images js sass/components sass/pages sass/sections src vendor",

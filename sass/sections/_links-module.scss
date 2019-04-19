@@ -1,7 +1,44 @@
 .links-module {
   .table-link-icon {
-    max-width: 688px;
     margin: 0 auto;
+    @media(max-width: 767px) {
+      max-width: 379px;
+    }
+    @media(min-width: 768px) {
+      max-width: 485px;
+    }
+    @media(min-width: 992px) {
+      max-width: 685px;
+    }
+  }
+  .table-link-icon__cell-line-header {
+    @media(max-width: 767px) {
+      display: block;
+    }
+    @media(min-width: 768px) {
+      width: 150px;
+    }
+    @media(min-width: 992px) {
+      width: 300px;
+    }
+    @media (max-width: 991px) {
+      padding-bottom: 0;
+    }
+  }
+  .table-link-icon__cell-link {
+    @media(max-width: 991px) {
+      display: block;
+    }
+    @media(max-width: 767px) {
+      position: relative;
+    }
+  }
+  .table-link-icon__icons {
+    @media(max-width: 767px) {
+      position: absolute;
+      top: -20px;
+      right: 0px;
+    }
   }
   .button {
     text-transform: none;

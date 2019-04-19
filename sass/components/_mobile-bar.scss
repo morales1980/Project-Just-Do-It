@@ -1,0 +1,7 @@
+.mobile-bar {
+  display: none;
+  border-bottom: 1px solid $aside-border-bottom-color;
+  @media(max-width: 767px) {
+    display: block;
+  }
+}

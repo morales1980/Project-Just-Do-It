@@ -1,0 +1,58 @@
+.wallet {
+  display: inline-block;
+  border: 1px solid $nav-border-color;
+  border-top: none;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 60px;
+  transition: 0.5s height;
+  background-color: $content-background-color;
+  &__sum {
+    @include font-style($nav-wallet-font-size, $nav-wallet-font-weight, $nav-icon-color, null);
+    display: inline-block;
+    padding: 18px 30px 18px 34px;
+    margin-right: 17px;
+    margin-left: 17px;
+    position: relative;
+    transition: 0.5s color;
+  }
+  &__icon-wallet {
+    display: inline-block;
+    position: absolute;
+    top: 19px;
+    left: 0;
+    width: 17px;
+    fill: $nav-icon-color;
+    transition: 0.5s fill;
+  }
+  &__icon-arrow {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    right: 0;
+    width: 11px;
+    fill: $nav-icon-color;
+    cursor: pointer;
+    &:hover {
+      fill: $content-special-color;
+    }
+  }
+  &__details {
+    @include font-style($nav-wallet-dropdown-font-size, $nav-wallet-font-weight, $nav-icon-color, null);
+    margin-right: 17px;
+    margin-left: 17px;
+  }
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    &:first-of-type {
+      padding-top: 13px;
+    }
+  }
+  &__label {}
+  &__amount {
+    color: $section-text-color;
+  }
+}

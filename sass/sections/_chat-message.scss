@@ -4,8 +4,7 @@
   .input-chat {
     width: calc(100% - 112px);
     min-width: 1px;
-    display: block;
-    float: left;
+    display: flex;
   }
   .input-chat__input {
     height: 40px;
@@ -16,8 +15,8 @@
   .button--accept {
     width: 95px;
     height: 40px;
-    float: left;
-    display: block;
+    display: flex;
     margin-left: 17px;
+    justify-content: center;
   }
 }

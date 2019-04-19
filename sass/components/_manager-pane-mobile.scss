@@ -1,0 +1,23 @@
+.manager-pane-mobile {
+  opacity: 0;
+  transition: 2s opacity;
+  display: none;
+    &__picture {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    background: url('../images/managerpicture.png') 0/cover;
+    position: relative;
+    margin-left: 13px;
+    margin-top: 25px;
+  }
+  &__status {
+    width: 9px;
+    height: 9px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    background-color: $chat-manager-status-color-1;
+  }
+}

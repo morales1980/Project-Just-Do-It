@@ -1,10 +1,19 @@
 .links-popup {
   max-width: 1074px;
+  background-color: $content-background-color;
+  display: none;
+  @media(max-width: 1199px) {
+    max-width: 849px;
+  }
+  @media(max-width: 991px) {
+    max-width: 625px;
+  }
   &__close-icon {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 12px;
+    width: 32px;
+    padding: 0 10px 10px;
     fill: $color-3;
     &:hover {
       fill: $color-11;
@@ -15,5 +24,15 @@
     position: relative;
     padding: 20px 17px 16px;
     border-bottom: 1px solid $element-border-color;
+  }
+  .filter-input-selects {
+    @media (max-width: 767px) {
+      padding-bottom: 26px;
+    }
+  }
+  .scroll-wrapper-vertical {
+    @media (max-width: 767px) {
+      height: 311px;
+    }
   }
 }

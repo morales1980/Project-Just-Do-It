@@ -1,21 +1,54 @@
 .filter-input-selects {
   max-width: 1074px;
-  padding: 28px 17px;
+  padding: 0 17px 26px;
   border-bottom: 1px solid $element-border-color;
+  display: flex;
+  flex-wrap: wrap;
+  @media (max-width: 767px) {
+    padding-bottom: 0;
+  }
   .field-input {
-    display: inline-block;
-    max-width: 436px;
+    display: flex;
+    width: calc(50% - 66px);
+    padding-top: 26px;
+    padding-right: 18px;
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  .field-input__label {
     width: 100%;
   }
   .field-select {
-    display: inline-block;
-    padding: 0 18px;
-    max-width: 460px;
+    display: flex;
+    padding-top: 26px;
+    padding-right: 18px;
+    width: calc(50% - 66px);
+    @media (max-width: 767px) {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  .field-select__label {
     width: 100%;
   }
   .field-select-icon {
-    display: inline-block;
-    max-width: 133px;
-    width: 100%;
+    padding-top: 26px;
+    display: flex;
+    width: 132px;
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .field-select-icon__label {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
+  }
+  .field-select-icon__input {
+    @media (max-width: 767px) {
+      width: 100%;
+    }
   }
 }

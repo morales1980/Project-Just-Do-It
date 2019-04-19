@@ -41,11 +41,14 @@ $aside-border-bottom-color: #333333;
 $date-picker-text-color: #333333;
 
 $nav-notification-color: #f58220;
+$nav-notification-text-color: #56819f;
 $nav-icon-color: #a6a6a6;
 $nav-name-color: #56819f;
 $nav-border-color: #e3e3e3;
 $nav-hover-background-color: #f5f5f2;
 
+$site-background-color: #f5f5f2;
+$content-background-color: #ffffff;
 $section-border-color: #f5f5f2;
 $section-background-color: #ffffff;
 $page-header-color: #a6a6a6;
@@ -161,8 +164,10 @@ $form-input-font-size:0.875;
 $link-large-font-size: 1;
 $link-small-font-size: 0.8125;
 
-$nav-balance-font-size: 1.25;
+$nav-wallet-font-size: 1.25;
+$nav-wallet-dropdown-font-size: 0.75;
 $nav-name-font-size: 0.8125;
+$nav-notification-font-size: 0.75;
 
 $page-header-font-size: 1;
 
@@ -205,8 +210,10 @@ $form-input-font-weight: 300;
 $link-large-font-weight: 300;
 $link-small-font-weight: 300;
 
-$nav-balance-font-weight: 400;
+$nav-wallet-font-weight: 400;
+$nav-wallet-dropdown-font-weight: 400;
 $nav-name-font-weight: 300;
+$nav-notification-font-weight: 400;
 
 $page-header-font-weight: 500;
 

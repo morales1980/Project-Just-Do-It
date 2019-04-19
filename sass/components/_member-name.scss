@@ -1,6 +1,7 @@
 .member-name {
   display: inline-block;
   border-right: 1px solid $nav-border-color;
+  min-width: 175px;
   @include font-style($nav-name-font-size, $nav-name-font-weight, $nav-name-color, capitalize);
   &__name {
     display: inline-block;

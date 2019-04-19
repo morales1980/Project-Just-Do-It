@@ -1,7 +1,8 @@
 .container-boxed {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1280px;
   margin: 0 auto;
+  background-color: $site-background-color;
 }
 .container-fluid {
   width: 100%;
@@ -16,6 +17,18 @@
 .row-fluid {
   display: flex;
   flex-wrap: wrap;
+}
+.float {
+  &__left {
+    float: left;
+  }
+  &__right {
+    float: right;
+  }
+}
+.main-container {
+  width: 100%;
+  background-color: $content-background-color;  
 }
 .scroll-wrapper-horizontal {
   display: block;

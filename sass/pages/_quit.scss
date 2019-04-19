@@ -1,12 +1,21 @@
 .quit {
   width: 359px;
+  background-color: $content-background-color;
+  display: none;
+  @media(max-width: 767px) {
+    width: 325px;
+  }
   .page-header {
     padding: 31px 23px 23px;
     border-bottom: 1px solid $element-border-color;
     text-transform: none;
   }
+  .row-fluid {
+    justify-content: flex-end;
+  }
   .button {
-    float: right;
+    justify-content: center;
+    display: flex;
     margin: 23px 21px;
     width: 95px;
     height: 40px;

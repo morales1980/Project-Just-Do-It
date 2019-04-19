@@ -1,6 +1,9 @@
 .datepicker-module {
   margin: 33px auto 36px;
   width: 379px;
+  @media(max-width: 767px) {
+    width: 325px;
+  }
   .button {
     display: inline-block;
     width: 40px;

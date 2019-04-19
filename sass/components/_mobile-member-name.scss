@@ -1,0 +1,25 @@
+.mobile-member-name {
+  height: 47px;
+  padding: 15px 0 15px 14px;
+  border-left: 4px solid transparent;
+  &:hover {
+    cursor: pointer;
+    border-left: 4px solid $aside-item-active-border-color;
+    background-color: $aside-item-active-background-color;
+    .mobile-member-name__icon {
+      fill: $aside-item-active-color;
+    }
+  }
+  &__icon {
+    fill: $aside-item-color;
+    width: 17px;
+    display: block;
+    float: left;
+  }
+  &__label {
+    @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);
+    padding-left: 13px;
+    display: block;
+    float: left;
+  }
+}

@@ -1,15 +1,14 @@
 .manager-pane {
+  opacity: 1;
+  transition: 2s opacity;
   &__header {
     @include font-style($aside-font-size, $aside-medium-font-weight, $aside-item-color, uppercase);
-    padding: 28px 0 19px 20px;
+    padding: 0 0 19px 20px;
   }
   &__row {
     @extend .row-float;
   }
   &__picture {
-    // phone dimensions
-    // width: 26px;
-    // height: 26px;
     width: 43px;
     height: 43px;
     border-radius: 50%;

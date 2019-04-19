@@ -1,0 +1,51 @@
+.mobile-wallet-popup {
+  max-width: 300px;
+  border: 1px solid $element-border-color;
+  background-color: $content-background-color;
+  display: none;
+  .row-fluid {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    display: flex;
+    width: 15px;
+    height: 16px;
+    fill: $section-text-color;
+    margin: 15px 0 0 17px;
+  }
+  &__sum {
+    @include font-style($nav-wallet-font-size, $nav-wallet-font-weight, $section-text-color, null);
+    display: flex;
+    padding: 23px 18px 5px 18px;
+  }
+  &__close-icon {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    padding: 10px;
+    margin-top: -20px;
+    fill: $color-3;
+    &:hover {
+      fill: $color-11;
+      cursor: pointer;
+    }
+  }
+  &__details {
+    @include font-style($nav-wallet-dropdown-font-size, $nav-wallet-font-weight, $nav-icon-color, null);
+    margin-right: 17px;
+    margin-left: 17px;
+  }
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    &:first-of-type {
+      padding-top: 13px;
+    }
+  }
+  &__label {}
+  &__amount {
+    color: $section-text-color;
+  }
+}

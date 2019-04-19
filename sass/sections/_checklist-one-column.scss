@@ -1,5 +1,5 @@
 .checklist-one-column {
-  width: 50%;
+  width: 100%;
   padding: 0 17px;
   border-right: 1px solid $element-border-color;
   .section-header {
@@ -8,5 +8,9 @@
   .scroll-wrapper-vertical {
     height: 352px;
     margin-bottom: 18px;
+  }
+  &--banners {}
+  &--websites {
+    border-right: none;
   }
 }

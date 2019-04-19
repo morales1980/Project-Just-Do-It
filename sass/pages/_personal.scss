@@ -1,0 +1,22 @@
+.personal {
+  .page-header {
+    padding: 19px 18px 16px;
+    border-bottom: 1px solid $element-border-color;
+  }
+  .personal-form__label {
+    @media(max-width: 767px) {
+      max-width: 275px;
+      &:first-of-type {
+        padding-top: 15px;
+      }
+      &:last-of-type {
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .section-header {
+    @media(max-width: 767px) {
+      padding-top: 0;
+    }
+  }
+}

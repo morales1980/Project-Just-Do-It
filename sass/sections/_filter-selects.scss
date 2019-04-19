@@ -1,17 +1,27 @@
 .filter-selects {
   max-width: 1074px;
-  padding: 26px 17px 36px;
+  padding: 0 17px 36px;
   border-bottom: 1px solid $element-border-color;
+  display: flex;
+  flex-wrap: wrap;
   .field-select {
-    display: inline-block;
-    padding: 0 18px;
-    width: 33%;
+    display: flex;
+    margin: 0 18px;
+    width: calc(33% - 12px);
+    padding-top: 26px;
     max-width: none;
     &:first-of-type {
-      padding: 0;
+      margin: 0;
     }
     &:last-of-type {
-      padding: 0;
+      margin: 0;
     }
+    @media (max-width: 767px) {
+      width: 100%;
+      margin: 0;
+    }
+  }
+  .field-select__label {
+    width: 100%;
   }
 }

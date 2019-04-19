@@ -1,0 +1,10 @@
+.modal-background {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(25,25,25,0.7);
+  // opacity: 0.7;
+  position: absolute;
+  .banners-popup {
+    margin: 0 auto;
+  }
+}

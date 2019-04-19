@@ -1,22 +1,29 @@
 .link-generator {
     border-top: 1px solid $element-border-color;
     padding: 19px 17px 22px;
-    height: 82px;
+    @media(max-width: 767px) {
+      justify-content: flex-end;
+    }
   .input {
     height: 40px;
     min-width: 121px;
     width: calc(100% - 282px);
-    display: block;
-    float: left;
+    display: flex;
+    @media(max-width: 767px) {
+      width: 100%;
+    }
   }
   .button--disabled {
     height: 40px;
     width: 149px;
     margin: 0 19px;
     padding: 0 19px 0 53px;
-    display: block;
-    float: left;
+    display: flex;
     position: relative;
+    @media(max-width: 767px) {
+      margin-top: 19px;
+      margin-left: 0;
+    }
   }
   .button__icon {
     position: absolute;
@@ -26,7 +33,10 @@
   .button--accept {
     height: 40px;
     width: 95px;
-    display: block;
-    float: left;
+    display: flex;
+    justify-content: center;
+    @media(max-width: 767px) {
+      margin-top: 19px;
+    }
   }
 }

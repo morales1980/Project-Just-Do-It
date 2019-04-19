@@ -1,0 +1,35 @@
+.mobile-member-name-popup {
+  max-width: 300px;
+  border: 1px solid $element-border-color;
+  background-color: $content-background-color;
+  display: none;
+  .row-fluid {
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__icon {
+    display: flex;
+    height: 17px;
+    width: 17px;
+    fill: $section-text-color;
+    margin-right: -20px;
+  }
+  &__name {
+    display: flex;
+    @include font-style($nav-name-font-size, $nav-name-font-weight, $nav-name-color, capitalize);
+    padding: 23px 0;
+  }
+  &__close-icon {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    padding: 10px;
+    margin-top: -31px;
+    margin-right: -34px;
+    fill: $color-3;
+    &:hover {
+      fill: $color-11;
+      cursor: pointer;
+    }
+  }
+}

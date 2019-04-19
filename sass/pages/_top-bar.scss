@@ -1,6 +1,21 @@
 .top-bar {
+  height: 60px;
+  min-width: 484px;
+  position: sticky;
+  top: 0;
+  background-color: $content-background-color;
+  z-index: 100;
   display: flex;
   justify-content: flex-end;
-  height: 60px;
-  border-bottom: 1px solid $nav-border-color;
+  @media(max-width: 767px) {
+    display: none;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid $nav-border-color;
+    position: absolute;
+    top: 59px;
+  }
 }

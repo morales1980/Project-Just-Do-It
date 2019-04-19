@@ -1,10 +1,22 @@
 .chat {
-  width: 1174px;
+  max-width: 1074px;
+  background-color: $content-background-color;
+  display: none;
+  @media(max-width: 1199px) {
+    max-width: 849px;
+  }
+  @media(max-width: 991px) {
+    max-width: 625px;
+  }
+  @media(max-width: 767px) {
+    max-width: 450px;
+  }
   &__close-icon {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 12px;
+    width: 32px;
+    padding: 0 10px 10px;
     fill: $color-3;
     &:hover {
       fill: $color-11;

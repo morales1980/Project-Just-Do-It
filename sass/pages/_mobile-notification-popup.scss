@@ -1,0 +1,51 @@
+.mobile-notification-popup {
+  border: 1px solid $nav-border-color;
+  background-color: $content-background-color;
+  max-width: 300px;
+  display: none;
+  .row-fluid {
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__icon {
+    display: flex;
+    margin: 23px 0 0 17px;
+    height: 17px;
+    width: 17px;
+    fill: $section-text-color;
+  }
+  &__close-icon {
+    display: flex;
+    height: 32px;
+    width: 32px;
+    padding: 10px;
+    margin-top: -8px;
+    fill: $color-3;
+    &:hover {
+      fill: $color-11;
+      cursor: pointer;
+    }
+  }
+  &__details {
+    display: block;
+    margin: 8px 17px 12px;
+  }
+  &__detail {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__label {
+    display: flex;
+    @include font-style($nav-notification-font-size, $nav-notification-font-weight, $nav-notification-text-color, null);
+    margin: 13px 0 2px;
+  }
+  &__label-status {
+    display: flex;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $content-special-color;
+  }
+}

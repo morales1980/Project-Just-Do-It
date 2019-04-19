@@ -6,37 +6,41 @@
 @import "styleguide";
 
 /* Components */
-@import "components/balance";
 @import "components/button";
-@import "components/link";
-@import "components/input-password";
-@import "components/input-chat";
-@import "components/input-icon";
-@import "components/input";
 @import "components/checkbox-item";
 @import "components/datepicker";
 @import "components/field-input";
 @import "components/field-select";
 @import "components/field-select-icon";
 @import "components/field-textarea";
+@import "components/input";
+@import "components/input-chat";
+@import "components/input-icon";
+@import "components/input-password";
+@import "components/link";
 @import "components/logo";
 @import "components/logout";
 @import "components/manager-pane";
+@import "components/manager-pane-mobile";
 @import "components/member-name";
 @import "components/menu-full";
 @import "components/menu-short";
-@import "components/message";
 @import "components/messenger";
 @import "components/nav-toggle";
+@import "components/notification";
+@import "components/notification-dropdown";
 @import "components/pagination";
 @import "components/scrollbar";
 @import "components/slider";
 @import "components/tabs";
 @import "components/table-digit";
 @import "components/table-link";
-@import "components/textarea";
 @import "components/table-link-icon";
 @import "components/table-sorting";
+@import "components/textarea";
+@import "components/wallet";
+@import "components/mobile-bar";
+@import "components/mobile-popup-item";
 
 /* Sections */
 @import "sections/chat-message";
@@ -45,30 +49,36 @@
 @import "sections/datepicker-module";
 @import "sections/earnings-chart";
 @import "sections/filter-input-selects";
-@import "sections/filter-selects";
 @import "sections/filter-large";
+@import "sections/filter-selects";
 @import "sections/link-generator";
+@import "sections/links-module";
+@import "sections/modal-background";
 @import "sections/numbers";
 @import "sections/personal-form";
 @import "sections/table-links-buttons";
 @import "sections/table-sorting-pagination";
-@import "sections/links-module";
 
 // /* Pages / Views */
-@import "pages/login";
-@import "pages/quit";
-@import "pages/chat";
-@import "pages/top-bar";
 @import "pages/aside";
-@import "pages/personal-data";
-@import "pages/general";
-@import "pages/details";
-@import "pages/links";
-@import "pages/links-popup";
 @import "pages/banners";
 @import "pages/banners-popup";
+@import "pages/chat";
+@import "pages/details";
+@import "pages/login";
+@import "pages/general";
+@import "pages/links";
+@import "pages/links-popup";
+@import "pages/main";
+@import "pages/mobile-member-name-popup";
+@import "pages/mobile-notification-popup";
+@import "pages/mobile-wallet-popup";
 @import "pages/payout";
+@import "pages/personal";
+@import "pages/popups";
 @import "pages/postback";
+@import "pages/quit";
+@import "pages/top-bar";
 
 * {
   box-sizing: border-box;
@@ -85,6 +95,11 @@ body {
   background-color: $section-background-color;
   &--border {
     border: 18px solid $section-border-color;
+    border-top: none;
+    @media(max-width: 767px) {
+      border: 8px solid $section-border-color;
+      border-top: none;
+    }
   }
   &--border-fix {
     border-top: 0px;
@@ -101,4 +116,91 @@ body {
 .section-text {
   @include font-style($section-text-font-size, $section-text-font-weight, $section-text-color, none);
   margin: 0;
+}
+.full-view {
+  width: 188px;
+  .logo {
+    display: block;
+    // opacity: 1;
+  }
+  .menu-full__item-label {
+    display: block;
+    // opacity: 1;
+  }
+  .mobile-popup-item__label {
+    display: block;
+    // opacity: 1;
+  }
+  .manager-pane {
+    display: block;
+    // opacity: 1;
+  }
+  .manager-pane-mobile {
+    display: none;
+    // opacity: 0;
+  }
+}
+.show-elements {
+  .logo {
+    opacity: 1;
+    visibility: visible;
+  }
+  .menu-full__item-label {
+    opacity: 1;
+    visibility: visible;
+  }
+  .mobile-popup-item__label {
+    opacity: 1;
+    visibility: visible;
+  }
+  .manager-pane {
+    opacity: 1;
+    visibility: visible;
+  }
+  .manager-pane-mobile {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.short-view {
+  width: 54px;
+  .logo {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .menu-full {
+    padding-bottom: 0;
+  }
+  .menu-full__item-label {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mobile-popup-item__label {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .manager-pane {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .manager-pane-mobile {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.wallet-dropdown {
+  .wallet {
+    height: 208px;
+  }
+  .wallet__sum {
+    color: $section-text-color;
+  }
+  .wallet__icon-wallet {
+    fill: $section-text-color;
+  }
 }

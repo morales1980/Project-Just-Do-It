@@ -3,14 +3,26 @@
   padding: 8px 0 26px 0;
   border-bottom: 1px solid $aside-border-bottom-color;
   &__item {
-    padding-left: 14px;
+    height: 47px;
+    padding: 15px 0 15px 14px;
     border-left: 4px solid transparent;
+    @extend .row-float;
     &:hover {
       cursor: pointer;
       border-left: 4px solid $aside-item-active-border-color;
       background-color: $aside-item-active-background-color;
-      .menu-full__item-label
-      {
+      .menu-full__item-label {
+        color: $aside-item-active-color;
+      }
+      .menu-full__item-icon {
+        fill: $aside-item-active-color;
+      }
+    }
+    &--selected {
+      cursor: pointer;
+      border-left: 4px solid $aside-item-active-border-color;
+      background-color: $aside-item-active-background-color;
+      .menu-full__item-label {
         color: $aside-item-active-color;
       }
       .menu-full__item-icon {
@@ -21,27 +33,34 @@
   &__item-icon {
     fill: $aside-item-color;
     width: 14px;
+    display: block;
+    float: left;
     &--general {
       width: 16px;
       margin-right: -2px;
     }
     &--details {
       width: 14px;
+      margin-top: 2px;
     }
     &--links {
       width: 16px;
       margin-right: -2px;
+      margin-top: 4px;
     }
     &--banners {
       width: 14px;
+      margin-top: 2px;
     }
     &--personal {
       width: 10px;
       margin-right: 4px;
+      margin-top: -1px;
     }
     &--payout {
       width: 13px;
       margin-right: 1px;
+      margin-top: 2px;
     }
     &--postback {
       width: 13px;
@@ -50,7 +69,8 @@
   }
   &__item-label {
     @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);
-    padding: 15px 0 15px 13px;
-    display: inline-block;
+    padding-left: 13px;
+    display: block;
+    float: left;
   }
 }

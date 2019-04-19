@@ -1,0 +1,54 @@
+.popups {
+  display: none;
+  max-width: 1280px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  background-color: rgba(25,25,25,0.7);
+  height: 100vh;
+  .banners-popup {
+    margin: 94px auto 33px;
+    @media(max-width: 767px) {
+      margin: 0 auto;
+    }
+  }
+  .links-popup {
+    margin: 94px auto 58px;
+    @media(max-width: 767px) {
+      margin: 0 auto;
+    }
+  }
+  .login {
+    margin: 290px auto 0;
+    @media(max-width: 767px) {
+      margin: 30% auto 0;
+    }
+  }
+  .quit {
+    margin: 290px auto 0;
+    @media(max-width: 767px) {
+      margin: 30% auto 0;
+    }
+  }
+  .mobile-wallet-popup {
+    @media(max-width: 767px) {
+      margin: 30% auto 0;
+    }
+  }
+  .mobile-notification-popup {
+    @media(max-width: 767px) {
+      margin: 30% auto 0;
+    }
+  }
+  .mobile-member-name-popup {
+    @media(max-width: 767px) {
+      margin: 30% auto 0;
+    }
+  }
+  .chat {
+    margin: 176px auto 0;
+    @media(max-width: 767px) {
+      margin: 25% auto 0;
+    }
+  }
+}

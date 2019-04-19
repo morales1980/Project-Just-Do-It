@@ -1,14 +1,21 @@
 .earnings-chart {
-  max-width: 688px;
-  padding: 76px 15px 0;
+  @media(max-width: 767px) {
+    max-width: 325px;
+  }
+  @media(min-width: 768px) {
+    max-width: 430px;
+  }
+  @media(min-width: 992px) {
+    max-width: 685px;
+  }
+  padding: 76px 0 0;
   .section-header {
     padding-bottom: 32px;
-    margin-left: -15px;
   }
   &__canvas-wrapper {
-    width: 655px;
-  }
-  &__canvas {
+    position: relative;
+    margin: auto;
     margin-bottom: 45px;
   }
+  &__canvas {}
 }

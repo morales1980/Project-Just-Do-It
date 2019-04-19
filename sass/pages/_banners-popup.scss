@@ -1,10 +1,19 @@
 .banners-popup {
   max-width: 1074px;
+  background-color: $content-background-color;
+  display: none;
+  @media(max-width: 1199px) {
+    max-width: 849px;
+  }
+  @media(max-width: 991px) {
+    max-width: 625px;
+  }
   &__close-icon {
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 12px;
+    width: 32px;
+    padding: 0 10px 10px;
     fill: $color-3;
     &:hover {
       fill: $color-11;
@@ -16,13 +25,14 @@
     padding: 20px 17px 16px;
     border-bottom: 1px solid $element-border-color;
   }
-  .checklist-one-column--banners {
-    float: left;
-    width: 50%;
+  .filter-input-selects {
+    border-bottom: none;
+    padding-bottom: 12px;
   }
-  .checklist-one-column--websites {
-    float: left;
-    width: 50%;
-    border-right: none;
+  .checklist-one-column--banners {
+    @media(max-width: 767px) {
+      border-right: none;
+      border-bottom: 1px solid $element-border-color;
+    }
   }
 }

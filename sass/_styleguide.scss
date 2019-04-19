@@ -468,22 +468,27 @@
     fill: $pagination-page-digit-hover-color;
   }
 }
-.styleguide .balance {
+.styleguide .wallet {
   display: inline-block;
   border-left: 1px solid $nav-border-color;
   border-right: 1px solid $nav-border-color;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 60px;
+  transition: 1s height;
   &__sum {
-    @include font-style($nav-balance-font-size, $nav-balance-font-weight, $nav-icon-color, null);
+    @include font-style($nav-wallet-font-size, $nav-wallet-font-weight, $nav-icon-color, null);
     display: inline-block;
-    padding: 23px 30px 23px 34px;
-    margin-right: 20px;
-    margin-left: 16px;
+    padding: 18px 30px 18px 34px;
+    margin-right: 17px;
+    margin-left: 17px;
     position: relative;
   }
   &__icon-wallet {
     display: inline-block;
     position: absolute;
-    top: 25px;
+    top: 19px;
     left: 0;
     width: 17px;
     fill: $nav-icon-color;
@@ -491,10 +496,31 @@
   &__icon-arrow {
     display: inline-block;
     position: absolute;
-    top: 32px;
+    top: 28px;
     right: 0;
     width: 11px;
     fill: $nav-icon-color;
+    cursor: pointer;
+    &:hover {
+      fill: $content-special-color;
+    }
+  }
+  &__details {
+    @include font-style($nav-wallet-dropdown-font-size, $nav-wallet-font-weight, $nav-icon-color, null);
+    margin-right: 17px;
+    margin-left: 17px;
+  }
+  &__detail {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 17px;
+    &:first-of-type {
+      padding-top: 13px;
+    }
+  }
+  &__label {}
+  &__amount {
+    color: $section-text-color;
   }
 }
 .styleguide .member-name {

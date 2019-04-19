@@ -9,6 +9,9 @@
     border: none;
     border-right: 1px solid $element-border-color;
     padding: 9px 0 8px;
+    @media(max-width: 767px) {
+      width: 114px;
+    }
     &:focus {
       outline: none;
     }
@@ -22,6 +25,9 @@
     width: 133px;
     padding: 9px 0 8px 15px;
     border: none;
+    @media(max-width: 767px) {
+      width: 99px;
+    }
     &:focus {
       outline: none;
     }
