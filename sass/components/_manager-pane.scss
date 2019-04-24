@@ -1,5 +1,5 @@
 .manager-pane {
-  opacity: 1;
+  opacity: 0;
   transition: 2s opacity;
   &__header {
     @include font-style($aside-font-size, $aside-medium-font-weight, $aside-item-color, uppercase);

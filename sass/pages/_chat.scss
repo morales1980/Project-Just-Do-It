@@ -11,6 +11,9 @@
   @media(max-width: 767px) {
     max-width: 450px;
   }
+  @media(max-width: 576px) {
+    max-width: 360px;
+  }
   &__close-icon {
     position: absolute;
     top: 20px;

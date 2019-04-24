@@ -5,7 +5,8 @@
   position: fixed;
   z-index: 2;
   background-color: rgba(25,25,25,0.7);
-  height: 100vh;
+  height: 100%;
+  overflow: auto;
   .banners-popup {
     margin: 94px auto 33px;
     @media(max-width: 767px) {

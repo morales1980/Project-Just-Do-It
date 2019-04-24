@@ -74,6 +74,7 @@
 @import "pages/mobile-notification-popup";
 @import "pages/mobile-wallet-popup";
 @import "pages/payout";
+@import "pages/pages";
 @import "pages/personal";
 @import "pages/popups";
 @import "pages/postback";
@@ -121,45 +122,35 @@ body {
   width: 188px;
   .logo {
     display: block;
-    // opacity: 1;
   }
   .menu-full__item-label {
     display: block;
-    // opacity: 1;
   }
   .mobile-popup-item__label {
     display: block;
-    // opacity: 1;
   }
   .manager-pane {
     display: block;
-    // opacity: 1;
   }
   .manager-pane-mobile {
     display: none;
-    // opacity: 0;
   }
 }
 .show-elements {
   .logo {
     opacity: 1;
-    visibility: visible;
   }
   .menu-full__item-label {
     opacity: 1;
-    visibility: visible;
   }
   .mobile-popup-item__label {
     opacity: 1;
-    visibility: visible;
   }
   .manager-pane {
     opacity: 1;
-    visibility: visible;
   }
   .manager-pane-mobile {
     opacity: 0;
-    visibility: hidden;
   }
 }
 .short-view {
@@ -167,7 +158,6 @@ body {
   .logo {
     display: none;
     opacity: 0;
-    visibility: hidden;
   }
   .menu-full {
     padding-bottom: 0;
@@ -175,22 +165,18 @@ body {
   .menu-full__item-label {
     display: none;
     opacity: 0;
-    visibility: hidden;
   }
   .mobile-popup-item__label {
     display: none;
     opacity: 0;
-    visibility: hidden;
   }
   .manager-pane {
     display: none;
     opacity: 0;
-    visibility: hidden;
   }
   .manager-pane-mobile {
     display: block;
     opacity: 1;
-    visibility: visible;
   }
 }
 .wallet-dropdown {

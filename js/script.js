@@ -147,11 +147,32 @@
   var aside = document.querySelector('.aside');
   var mainContainer = document.querySelector('.main-container');
   var mobileBreakpoint = window.matchMedia('(max-width: 767px)');
+  var desktopBreakpoint = window.matchMedia('(min-width: 768px)');
 
-  function addClassOnBreakpoint(mobileBreakpoint) {
-    if (mobileBreakpoint.matches) {
+  function addMobileClassOnBreakpoint(breakpoint) {
+    if (breakpoint.matches) {
       aside.classList.remove('full-view');
-      aside.classList.remove('showElements');
+      aside.classList.remove('show-elements');
+      aside.classList.add('short-view');
+      mainContainer.classList.remove('desktop');
+      mainContainer.classList.add('mobile');
+    }
+  }
+
+  function addDesktopClassOnBreakpoint(breakpoint) {
+    if (breakpoint.matches) {
+      aside.classList.remove('short-view');
+      aside.classList.add('full-view');
+      setTimeout(showElements, 500);
+      mainContainer.classList.remove('mobile');
+      mainContainer.classList.add('desktop');
+    }
+  }
+
+  function addClassOnBreakpoint(breakpoint) {
+    if (breakpoint.matches) {
+      aside.classList.remove('full-view');
+      aside.classList.remove('show-elements');
       aside.classList.add('short-view');
       mainContainer.classList.remove('desktop');
       mainContainer.classList.add('mobile');
@@ -188,12 +209,12 @@
     }
   }
 
-  if(navToggle) {
-    navToggle.addEventListener('click', menuToggle);
-  }
+  navToggle.addEventListener('click', menuToggle);
 
-  addClassOnBreakpoint(mobileBreakpoint);
   mobileBreakpoint.addListener(addClassOnBreakpoint);
+  addDesktopClassOnBreakpoint(desktopBreakpoint);
+  addMobileClassOnBreakpoint(mobileBreakpoint);
+
 })();
 
 //  toggle notification dropdown
@@ -220,7 +241,6 @@
   var dropdownToggle = document.querySelector('.wallet__icon-arrow');
   var topBar = document.querySelector('.top-bar');
   var topBarClass = Array.from(document.querySelector('.top-bar').classList);
-
 
   dropdownToggle.addEventListener('click', walletDropdown);
 

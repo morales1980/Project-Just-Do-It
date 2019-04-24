@@ -61,28 +61,33 @@
   }
 })();
 
-// toggle balance dropdown
-var dropdownToggle = document.querySelector('.balance__icon-arrow');
-var balanceWallet = document.querySelector('.balance__icon-wallet');
-var balanceSum = document.querySelector('.balance__sum');
-dropdownToggle.addEventListener('click', dropdown);
-function dropdown() {
-  var balanceContainer = document.querySelector('.balance');
-  var balanceWallet = document.querySelector('.balance__icon-wallet');
-  var balanceSum = document.querySelector('.balance__sum');
+//  toggle wallet dropdown
+(function() {
+  var dropdownToggle = document.querySelector('.wallet__icon-arrow');
+  var topBar = document.querySelector('.top-bar');
+  var topBarClass = Array.from(document.querySelector('.top-bar').classList);
 
-  if((balanceContainer.style.height === '') || (balanceContainer.style.height === '60px')) {
-    dropdownToggle.children[0].attributes[0].value = '10.1,6.9 5.5,2.2 0.9,6.9 0.1,6.1 5.5,0.8 10.9,6.1';
-    balanceContainer.style.height = '200px';
-    balanceWallet.style.fill = '#333333';
-    balanceSum.style.color = '#333333';
-  } else {
-    dropdownToggle.children[0].attributes[0].value = '5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9';
-    balanceContainer.style.height = '60px';
-    balanceWallet.style.fill = '#a6a6a6';
-    balanceSum.style.color = '#a6a6a6';
+  dropdownToggle.addEventListener('click', walletDropdown);
+
+  function walletDropdown() {
+    if(topBarClass.includes('wallet-dropdown')) {
+      hideWalletDropdown();
+    } else {
+      showWalletDropdown();
+    }
   }
-}
+
+  function showWalletDropdown() {
+    topBar.classList.add('wallet-dropdown');
+    topBarClass = Array.from(document.querySelector('.top-bar').classList);
+  }
+
+  function hideWalletDropdown(e) {
+    topBar.classList.remove('wallet-dropdown');
+    topBarClass = Array.from(document.querySelector('.top-bar').classList);
+  }
+
+})();
 
 //  <input> datepicker instance
 (function() {

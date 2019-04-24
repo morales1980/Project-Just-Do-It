@@ -353,12 +353,12 @@ template {
   width: 100%;
 }
 
-.row-float::before, .styleguide .slider__row::before, .styleguide .messenger__row::before, .styleguide .manager-pane__row::before, .manager-pane__row::before, .menu-full__item::before, .messenger__row::before, .slider__row::before, .mobile-popup-item::before, .row-float::after, .styleguide .slider__row::after, .styleguide .messenger__row::after, .styleguide .manager-pane__row::after, .manager-pane__row::after, .menu-full__item::after, .messenger__row::after, .slider__row::after, .mobile-popup-item::after {
+.row-float::before, .styleguide .slider__row::before, .styleguide .messenger__row::before, .styleguide .manager-pane__row::before, .styleguide .menu-full__item::before, .manager-pane__row::before, .menu-full__item::before, .messenger__row::before, .slider__row::before, .mobile-popup-item::before, .row-float::after, .styleguide .slider__row::after, .styleguide .messenger__row::after, .styleguide .manager-pane__row::after, .styleguide .menu-full__item::after, .manager-pane__row::after, .menu-full__item::after, .messenger__row::after, .slider__row::after, .mobile-popup-item::after {
   content: "";
   display: table;
 }
 
-.row-float::after, .styleguide .slider__row::after, .styleguide .messenger__row::after, .styleguide .manager-pane__row::after, .manager-pane__row::after, .menu-full__item::after, .messenger__row::after, .slider__row::after, .mobile-popup-item::after {
+.row-float::after, .styleguide .slider__row::after, .styleguide .messenger__row::after, .styleguide .manager-pane__row::after, .styleguide .menu-full__item::after, .manager-pane__row::after, .menu-full__item::after, .messenger__row::after, .slider__row::after, .mobile-popup-item::after {
   clear: both;
 }
 
@@ -810,18 +810,31 @@ template {
 }
 
 .styleguide .checkbox-item {
-  padding: 13px 18px 13px 13px;
+  padding: 13px;
+  margin-right: 16px;
 }
 
 .styleguide .checkbox-item--hover {
   background-color: #e3e3e3;
 }
 
+.styleguide .checkbox-item:hover {
+  background-color: #e3e3e3;
+}
+
+.styleguide .checkbox-item:hover .checkbox-item__icon {
+  fill: #56819f;
+}
+
 .styleguide .checkbox-item__input:checked ~ .checkbox-item__label > .checkbox-item__display-field:before {
   font-family: 'FontAwesome';
-  content: "\f559";
+  content: "\f00c";
   position: absolute;
   color: #ffffff;
+  font-size: 0.7rem;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
 .styleguide .checkbox-item__input:checked ~ .checkbox-item__label > .checkbox-item__display-field {
@@ -852,6 +865,10 @@ template {
   margin: 0;
 }
 
+.styleguide .checkbox-item__link:hover .checkbox-item__icon {
+  fill: #f58220;
+}
+
 .styleguide .checkbox-item__icon {
   width: 13px;
   height: 13px;
@@ -859,10 +876,6 @@ template {
   float: right;
   position: relative;
   top: 3px;
-}
-
-.styleguide .checkbox-item__icon--hover {
-  fill: #56819f;
 }
 
 .styleguide .tabs__item {
@@ -1285,13 +1298,14 @@ template {
 
 .styleguide .wallet {
   display: inline-block;
-  border-left: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
+  border: 1px solid #e3e3e3;
+  border-top: none;
   position: relative;
   z-index: 1;
   overflow: hidden;
   height: 60px;
-  transition: 1s height;
+  transition: 0.5s height;
+  background-color: #ffffff;
 }
 
 .styleguide .wallet__sum {
@@ -1302,6 +1316,7 @@ template {
   margin-right: 17px;
   margin-left: 17px;
   position: relative;
+  transition: 0.5s color;
 }
 
 .styleguide .wallet__icon-wallet {
@@ -1311,6 +1326,7 @@ template {
   left: 0;
   width: 17px;
   fill: #a6a6a6;
+  transition: 0.5s fill;
 }
 
 .styleguide .wallet__icon-arrow {
@@ -1613,34 +1629,62 @@ template {
 }
 
 .styleguide .menu-full__item {
-  padding-left: 14px;
+  height: 47px;
+  padding: 15px 0 15px 14px;
   border-left: 4px solid transparent;
 }
 
-.styleguide .menu-full__item--hover {
+.styleguide .menu-full__item:hover {
   cursor: pointer;
   border-left: 4px solid #f58220;
   background-color: #333333;
 }
 
-.styleguide .menu-full__item--hover .menu-full__item-label {
+.styleguide .menu-full__item:hover .menu-full__item-label {
   color: #ffffff;
 }
 
-.styleguide .menu-full__item--hover .menu-full__item-icon {
+.styleguide .menu-full__item:hover .menu-full__item-icon {
+  fill: #ffffff;
+}
+
+.styleguide .menu-full__item--selected {
+  cursor: pointer;
+  border-left: 4px solid #f58220;
+  background-color: #333333;
+}
+
+.styleguide .menu-full__item--selected .menu-full__item-label {
+  color: #ffffff;
+}
+
+.styleguide .menu-full__item--selected .menu-full__item-icon {
   fill: #ffffff;
 }
 
 .styleguide .menu-full__item-icon {
   fill: #a6a6a6;
   width: 14px;
+  display: block;
+  float: left;
+}
+
+.styleguide .menu-full__item-icon--general {
+  width: 16px;
+  margin-right: -2px;
+}
+
+.styleguide .menu-full__item-icon--details {
+  width: 14px;
+  margin-top: 2px;
 }
 
 .styleguide .menu-full__item-label {
   font: 300 0.875rem "Roboto", sans-serif;
   color: #a6a6a6;
-  padding: 15px 0 15px 13px;
-  display: inline-block;
+  padding-left: 13px;
+  display: block;
+  float: left;
 }
 
 .styleguide .menu-short {
@@ -2423,7 +2467,7 @@ template {
 }
 
 .manager-pane {
-  opacity: 1;
+  opacity: 0;
   transition: 2s opacity;
 }
 
@@ -2467,6 +2511,7 @@ template {
   opacity: 0;
   transition: 2s opacity;
   display: none;
+  padding-bottom: 25px;
 }
 
 .manager-pane-mobile__picture {
@@ -3967,6 +4012,7 @@ template {
   max-width: 188px;
   width: 188px;
   transition: 1s width;
+  overflow: auto;
   background-color: #191919;
 }
 
@@ -3977,8 +4023,8 @@ template {
 .aside .logo {
   position: absolute;
   display: block;
-  transition: 2s opacity;
-  opacity: 1;
+  transition: 1.5s opacity;
+  opacity: 0;
 }
 
 .aside .row-float, .aside .manager-pane__row, .aside .menu-full__item, .aside .messenger__row, .aside .slider__row, .aside .mobile-popup-item {
@@ -3986,7 +4032,8 @@ template {
 }
 
 .aside .menu-full__item-label {
-  transition: 2s all;
+  transition: 1.5s opacity;
+  opacity: 0;
 }
 
 .banners .page-header {
@@ -4136,6 +4183,12 @@ template {
 @media (max-width: 767px) {
   .chat {
     max-width: 450px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chat {
+    max-width: 360px;
   }
 }
 
@@ -4832,6 +4885,22 @@ template {
   }
 }
 
+.pages {
+  width: 100%;
+}
+
+.pages .login {
+  display: block;
+}
+
+.pages .quit {
+  display: block;
+}
+
+.pages .chat {
+  display: block;
+}
+
 .personal .page-header {
   padding: 19px 18px 16px;
   border-bottom: 1px solid #e3e3e3;
@@ -4862,7 +4931,8 @@ template {
   position: fixed;
   z-index: 2;
   background-color: rgba(25, 25, 25, 0.7);
-  height: 100vh;
+  height: 100%;
+  overflow: auto;
 }
 
 .popups .banners-popup {
@@ -5154,27 +5224,22 @@ body {
 
 .show-elements .logo {
   opacity: 1;
-  visibility: visible;
 }
 
 .show-elements .menu-full__item-label {
   opacity: 1;
-  visibility: visible;
 }
 
 .show-elements .mobile-popup-item__label {
   opacity: 1;
-  visibility: visible;
 }
 
 .show-elements .manager-pane {
   opacity: 1;
-  visibility: visible;
 }
 
 .show-elements .manager-pane-mobile {
   opacity: 0;
-  visibility: hidden;
 }
 
 .short-view {
@@ -5184,7 +5249,6 @@ body {
 .short-view .logo {
   display: none;
   opacity: 0;
-  visibility: hidden;
 }
 
 .short-view .menu-full {
@@ -5194,25 +5258,21 @@ body {
 .short-view .menu-full__item-label {
   display: none;
   opacity: 0;
-  visibility: hidden;
 }
 
 .short-view .mobile-popup-item__label {
   display: none;
   opacity: 0;
-  visibility: hidden;
 }
 
 .short-view .manager-pane {
   display: none;
   opacity: 0;
-  visibility: hidden;
 }
 
 .short-view .manager-pane-mobile {
   display: block;
   opacity: 1;
-  visibility: visible;
 }
 
 .wallet-dropdown .wallet {

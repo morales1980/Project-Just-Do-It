@@ -112,20 +112,28 @@
     width: 170px;
   }
 }
+
 .styleguide .checkbox-item {
-  padding: 13px 18px 13px 13px;
+  padding: 13px;
+  margin-right: 16px;
   &--hover {
     background-color: $checkbox-list-hover-background-color;
   }
+  &:hover {
+    background-color: $checkbox-list-hover-background-color;
+  }
+  &:hover .checkbox-item__icon {
+    fill: $checkbox-list-hover-link-color;
+  }
   &__input:checked ~ .checkbox-item__label > .checkbox-item__display-field:before {
-    //poprosic kamila o pomoc w identyfikacji powodu dlczego nie wyswietla sie font awesome
     font-family: 'FontAwesome';
-    content: "\f559";
+    content: "\f00c";
     position: absolute;
     color: $color-7;
-    // top: 50%;
-    // left: 50%;
-    // transform: translateY(-50%) translateX(-50%);
+    font-size: 0.7rem;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
   }
   &__input:checked ~ .checkbox-item__label > .checkbox-item__display-field {
     background-color: $checkbox-selected-background-color;
@@ -149,6 +157,11 @@
     display: inline-block;
     margin: 0;
   }
+  &__link {
+    &:hover .checkbox-item__icon {
+      fill: $checkbox-list-link-hover-color;
+    }
+  }
   &__icon {
     width: 13px;
     height: 13px;
@@ -156,9 +169,6 @@
     float: right;
     position: relative;
     top: 3px;
-  }
-  &__icon--hover {
-    fill: $checkbox-list-hover-link-color;
   }
 }
 .styleguide .tabs {
@@ -470,13 +480,14 @@
 }
 .styleguide .wallet {
   display: inline-block;
-  border-left: 1px solid $nav-border-color;
-  border-right: 1px solid $nav-border-color;
+  border: 1px solid $nav-border-color;
+  border-top: none;
   position: relative;
   z-index: 1;
   overflow: hidden;
   height: 60px;
-  transition: 1s height;
+  transition: 0.5s height;
+  background-color: $content-background-color;
   &__sum {
     @include font-style($nav-wallet-font-size, $nav-wallet-font-weight, $nav-icon-color, null);
     display: inline-block;
@@ -484,6 +495,7 @@
     margin-right: 17px;
     margin-left: 17px;
     position: relative;
+    transition: 0.5s color;
   }
   &__icon-wallet {
     display: inline-block;
@@ -492,6 +504,7 @@
     left: 0;
     width: 17px;
     fill: $nav-icon-color;
+    transition: 0.5s fill;
   }
   &__icon-arrow {
     display: inline-block;
@@ -523,6 +536,7 @@
     color: $section-text-color;
   }
 }
+
 .styleguide .member-name {
   display: inline-block;
   border-right: 1px solid $nav-border-color;
@@ -749,31 +763,55 @@
   padding: 8px 0 26px 0;
   border-bottom: 1px solid $aside-border-bottom-color;
   &__item {
-    padding-left: 14px;
+    height: 47px;
+    padding: 15px 0 15px 14px;
     border-left: 4px solid transparent;
-  }
-  &__item--hover {
-    cursor: pointer;
-    border-left: 4px solid $aside-item-active-border-color;
-    background-color: $aside-item-active-background-color;
-    .menu-full__item-label
-    {
-      color: $aside-item-active-color;
+    @extend .row-float;
+    &:hover {
+      cursor: pointer;
+      border-left: 4px solid $aside-item-active-border-color;
+      background-color: $aside-item-active-background-color;
+      .menu-full__item-label {
+        color: $aside-item-active-color;
+      }
+      .menu-full__item-icon {
+        fill: $aside-item-active-color;
+      }
     }
-    .menu-full__item-icon {
-      fill: $aside-item-active-color;
+    &--selected {
+      cursor: pointer;
+      border-left: 4px solid $aside-item-active-border-color;
+      background-color: $aside-item-active-background-color;
+      .menu-full__item-label {
+        color: $aside-item-active-color;
+      }
+      .menu-full__item-icon {
+        fill: $aside-item-active-color;
+      }
     }
   }
   &__item-icon {
     fill: $aside-item-color;
     width: 14px;
+    display: block;
+    float: left;
+    &--general {
+      width: 16px;
+      margin-right: -2px;
+    }
+    &--details {
+      width: 14px;
+      margin-top: 2px;
+    }
   }
   &__item-label {
     @include font-style($aside-font-size, $aside-light-font-weight, $aside-item-color, null);
-    padding: 15px 0 15px 13px;
-    display: inline-block;
+    padding-left: 13px;
+    display: block;
+    float: left;
   }
 }
+
 .styleguide .menu-short {
   width: 54px;
   background-color: $aside-background-color;
