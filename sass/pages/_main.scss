@@ -76,5 +76,77 @@
   }
   .show {
     display: block;
-  }  
+  }
+  .full-view {
+    width: 188px;
+    .logo {
+      display: block;
+    }
+    .menu-full__item-label {
+      display: block;
+    }
+    .mobile-popup-item__label {
+      display: block;
+    }
+    .manager-pane {
+      display: block;
+    }
+    .manager-pane-mobile {
+      display: none;
+    }
+  }
+  .show-elements {
+    .logo {
+      opacity: 1;
+    }
+    .menu-full__item-label {
+      opacity: 1;
+    }
+    .mobile-popup-item__label {
+      opacity: 1;
+    }
+    .manager-pane {
+      opacity: 1;
+    }
+    .manager-pane-mobile {
+      opacity: 0;
+    }
+  }
+  .short-view {
+    width: 54px;
+    .logo {
+      display: none;
+      opacity: 0;
+    }
+    .menu-full {
+      padding-bottom: 0;
+    }
+    .menu-full__item-label {
+      display: none;
+      opacity: 0;
+    }
+    .mobile-popup-item__label {
+      display: none;
+      opacity: 0;
+    }
+    .manager-pane {
+      display: none;
+      opacity: 0;
+    }
+    .manager-pane-mobile {
+      display: block;
+      opacity: 1;
+    }
+  }
+  .wallet-dropdown {
+    .wallet {
+      height: 208px;
+    }
+    .wallet__sum {
+      color: $section-text-color;
+    }
+    .wallet__icon-wallet {
+      fill: $section-text-color;
+    }
+  }
 }

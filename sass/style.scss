@@ -26,6 +26,8 @@
 @import "components/menu-full";
 @import "components/menu-short";
 @import "components/messenger";
+@import "components/mobile-bar";
+@import "components/mobile-popup-item";
 @import "components/nav-toggle";
 @import "components/notification";
 @import "components/notification-dropdown";
@@ -39,8 +41,6 @@
 @import "components/table-sorting";
 @import "components/textarea";
 @import "components/wallet";
-@import "components/mobile-bar";
-@import "components/mobile-popup-item";
 
 /* Sections */
 @import "sections/chat-message";
@@ -91,102 +91,4 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
-}
-.section {
-  background-color: $section-background-color;
-  &--border {
-    border: 18px solid $section-border-color;
-    border-top: none;
-    @media(max-width: 767px) {
-      border: 8px solid $section-border-color;
-      border-top: none;
-    }
-  }
-  &--border-fix {
-    border-top: 0px;
-  }
-}
-.page-header {
-  @include font-style($page-header-font-size, $page-header-font-weight, $page-header-color, uppercase);
-  margin: 0;
-}
-.section-header {
-  @include font-style($section-header-font-size, $section-header-font-weight, $section-header-color, none);
-  margin: 0;
-}
-.section-text {
-  @include font-style($section-text-font-size, $section-text-font-weight, $section-text-color, none);
-  margin: 0;
-}
-.full-view {
-  width: 188px;
-  .logo {
-    display: block;
-  }
-  .menu-full__item-label {
-    display: block;
-  }
-  .mobile-popup-item__label {
-    display: block;
-  }
-  .manager-pane {
-    display: block;
-  }
-  .manager-pane-mobile {
-    display: none;
-  }
-}
-.show-elements {
-  .logo {
-    opacity: 1;
-  }
-  .menu-full__item-label {
-    opacity: 1;
-  }
-  .mobile-popup-item__label {
-    opacity: 1;
-  }
-  .manager-pane {
-    opacity: 1;
-  }
-  .manager-pane-mobile {
-    opacity: 0;
-  }
-}
-.short-view {
-  width: 54px;
-  .logo {
-    display: none;
-    opacity: 0;
-  }
-  .menu-full {
-    padding-bottom: 0;
-  }
-  .menu-full__item-label {
-    display: none;
-    opacity: 0;
-  }
-  .mobile-popup-item__label {
-    display: none;
-    opacity: 0;
-  }
-  .manager-pane {
-    display: none;
-    opacity: 0;
-  }
-  .manager-pane-mobile {
-    display: block;
-    opacity: 1;
-  }
-}
-.wallet-dropdown {
-  .wallet {
-    height: 208px;
-  }
-  .wallet__sum {
-    color: $section-text-color;
-  }
-  .wallet__icon-wallet {
-    fill: $section-text-color;
-  }
 }

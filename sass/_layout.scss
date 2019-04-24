@@ -28,7 +28,7 @@
 }
 .main-container {
   width: 100%;
-  background-color: $content-background-color;  
+  background-color: $content-background-color;
 }
 .scroll-wrapper-horizontal {
   display: block;
@@ -39,6 +39,32 @@
   display: block;
   width: 100%;
   overflow-y: auto;
+}
+.section {
+  background-color: $section-background-color;
+  &--border {
+    border: 18px solid $section-border-color;
+    border-top: none;
+    @media(max-width: 767px) {
+      border: 8px solid $section-border-color;
+      border-top: none;
+    }
+  }
+  &--border-fix {
+    border-top: 0px;
+  }
+}
+.page-header {
+  @include font-style($page-header-font-size, $page-header-font-weight, $page-header-color, uppercase);
+  margin: 0;
+}
+.section-header {
+  @include font-style($section-header-font-size, $section-header-font-weight, $section-header-color, none);
+  margin: 0;
+}
+.section-text {
+  @include font-style($section-text-font-size, $section-text-font-weight, $section-text-color, none);
+  margin: 0;
 }
 @media(max-width: 767px) {
   @include grid('sm');
