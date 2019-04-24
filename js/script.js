@@ -247,8 +247,10 @@
   function walletDropdown() {
     if(topBarClass.includes('wallet-dropdown')) {
       hideWalletDropdown();
+      dropdownToggle.children[0].outerHTML = '<polygon points="5.5,6.2 0.1,0.9 0.9,0.1 5.5,4.8 10.1,0.1 10.9,0.9 "/>';
     } else {
       showWalletDropdown();
+      dropdownToggle.children[0].outerHTML = '<polygon points="10.1,6.9 5.5,2.2 0.9,6.9 0.1,6.1 5.5,0.8 10.9,6.1 "/>';
     }
   }
 
